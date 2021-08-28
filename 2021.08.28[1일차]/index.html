@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>텍스트 요소 실습</title>
+</head>
+
+<body>
+  <!-- 텍스트 요소 1강 h1태그 -->
+  <h1>Heading level 1</h1>
+  <h2>Heading level 2</h2>
+  <h3>Heading level 3</h3>
+  <h4>Heading level 4</h4>
+  <h5>Heading level 5</h5>
+  <h6>Heading level 6</h6>
+
+  <!-- 글씨 크기를 조절하려면 CSS에서 font-size속성을 사용하세요 -->
+  <h1>h태그를 글씨 크기를 위해(h1)</h1>
+  <h6>사용 하지마세요.(h6)</h6>
+
+  <!-- h1 -> h3 처럼 헤딩 레벨을 건너뛰지마세요 -->
+  <h1>h태그 사용시 단계를(h1)</h1>
+  <h3>건너뛰지 마세요.(h3)</h3>
+
+  <!-- 텍스트 요소 2강 p태그 -->
+  <h2>p태그</h2>
+  <p>
+    개행이 무시됩니다.
+    개행이 무시됩니다.
+    개행이 무시됩니다.
+    개행이 무시됩니다.
+  </p>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda est aliquam quis sint illum consequuntur
+    veritatis! Minima expedita ipsum repudiandae sunt dolorum non voluptate esse similique, reprehenderit dolores itaque
+    totam?</p>
+  <!-- 두 문단 사이의 공백이 있습니다. 여백을 조정하고 싶다면 CSS를 통해 조정하세요 -->
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut necessitatibus magnam dolorem illo aspernatur facilis
+    sint in id autem recusandae dolore praesentium obcaecati animi, reiciendis molestiae ea. Aliquid, cumque facilis.
+  </p>
+
+  <!-- 텍스트 요소 3강 br태그 -->
+  <h2>br태그</h2>
+  <p>
+    br태그는 개행을 <br />
+    해주는 역할을 가지고 <br />
+    있습니다
+  </p>
+
+  <p style="margin-bottom: 150px;">문단과 문단사이의 여백을 많이 주고싶을때 연속된 br태그를 사용하지 마세요 </p>
+  <p>CSS 요소를 이용하여 두 p태그를 멀리 떨어트리세요</p>
+
+  <!-- 텍스트 요소 4강 blockquote태그, q태그 -->
+  <p>
+    bloackquote태그는 p태그안에 넣을수 없습니다. 사실상 지금 p태그가 닫힙니다.
+    <blockquote>
+      blockquote 태그는 블럭요소인 인용문입니다.<br />
+      또한 앞부분에 공백이 있습니다.
+    </blockquote>
+    p태그를 지금 한번 더 닫습니다. 좋은 코드가 아닙니다.
+  </p>
+  <p>
+    q태그는 p태그 안에서 사용할수 있습니다. 지금처럼요.<br />
+    <q>q태그는 인라인 요소인 인용문입니다. 쌍따옴표를 이용해 인용을 표시합니다.</q>
+  </p>
+
+  <blockquote cite="출처">
+    cite 속성은 인용문의 출처 문서나 메세지를 가리킵니다.<br />
+    사용자에겐 보이지 않습니다.
+  </blockquote>
+
+  <!-- 텍스트 요소 5강 pre태그 -->
+  <pre>pre태그는
+          미리 
+            서식을 지정한 텍스트를 나타내며, 
+        HTML에 작성한 그대로 
+    표현됩니다.
+    텍스트는 보통 고정폭 글꼴을 사용하여 랜더링 하고, 요소내 공백문자를 그대로 유지합니다.</pre>
+
+  <!-- 텍스트 요소 6강 figure태그 -->
+  <figure>
+    <p>
+      figure태그는 독립적인 콘텐츠를 표현합니다.
+    </p>
+    <img src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg" alt="" />
+    <figcaption style="background-color: black; color : white">figcaption요소를 통해 설명을 붙일 수 있습니다.</figcaption>
+  </figure>
+
+  <figure>
+    <pre>
+ (>____<)
+ ( ='o'=)
+-(,,)-(,,)-
+    </pre>
+    <figcaption>pre태그 또한 figure태그 안에 들어올 수 있습니다.</figcaption>
+  </figure>
+
+  <!-- 텍스트 요소 7강 hr태그 -->
+  <p>hr태그는 가로줄 태그입니다.</p>
+  <hr />
+  <p>
+    hr태그는 빈 요소입니다. 닫는 태그가 없습니다.<br />
+    hr태그의 스타일링은 hr태그의 속성이 아닌 CSS를 사용하여 스타일링합니다.
+  </p>
+
+  <!-- 텍스트 요소 8강 abbr, address, cite, bdo태그 -->
+  <abbr title="World Wide Web">WWW</abbr>
+  <p>
+    abbr태그는 abbreviation의 약어로 abbreviation자체가 약어란 뜻을 가지고 있습니다.<br />
+    abbr태그의 문장에 마우스를 호버링 하면 abbr의 속성인 title을 통해 이 약어가 무슨 단어의 약어인지 확인 할수 있습니다.
+  </p>
+
+  <address>
+    <p>
+      address태그는 주소를 나타내는 태그입니다. <br />
+      요즘은 e-mail이나 웹사이트의 주소도 있으므로 통칭하여 나타낼때 사용합니다 <br />
+      자체적인 특징보단 이 본문이 주소라는 의미가 더 큽니다.
+    </p>
+  </address>
+
+  <figure>
+    <blockquote>
+      cite 태그는 인용문의 출처 문서나 메세지를 가리킵니다.<br />
+      <cite>사용자에게 보입니다.</cite>
+    </blockquote>
+  </figure>
+
+  <p>
+    bdo태그는  bidirectional override로 텍스트를 반대로 사용합니다.<br/>
+    dir 속성의 값을 rtl, ltr으로 조정해 사용합니다.
+  </p>
+  <bdo dir="rtl">
+    bdo태그는  bidirectional override로 텍스트를 반대로 사용합니다.<br/>
+    dir 속성의 값을 rtl, ltr으로 조정해 사용합니다.
+  </bdo>
+
+  <!-- 텍스트 요소 9강 포멧팅- b, strong태그 -->
+  <p>b태그와 strong태그는 굵은 글씨를 만드는 태그이며 모두 같은 결과가 나옵니다.<br/>
+  하지만 두개를 사용하는데 의미가 다르므로 구분해서 사용하세요.</p>
+
+  <p><b>b태그</b>는 특별한 중요성은 없지만 굵게 표시하고 싶은 부분에 사용합니다.</p>
+  <p><strong>strong태그</strong>는 높은 중요도에 대해 표시합니다.</p>
+
+  <b>b태그를 이용하여 모든 컨텐츠를 굵게 표현하지마세요 CSS를 이용하여 꾸며주세요</b>
+
+  <!-- 텍스트 요소 10강 포멧팅- i, em태그 -->
+  <p>
+    i태그와 em태그는 글자를 기울이는 태그이며 모두 같은 결과가 나옵니다.<br/>
+    하지만 두개를 사용하는데 의미가 다르므로 구분해서 사용하세요.
+  </p>
+  
+  <p>i태그는 주위와 구분해야 하는 부분을 나타냅니다. (기술용어, 외국어 구절, 등장인물의 생각 등)<br/>
+    그는 주머니에서 시계
+    <i>-한눈에 보기에도 고풍스러운 장식이 돋보이는 비싼 물건처럼 보이는</i>
+    를 꺼냈다.
+  </p>
+
+  <p>em태그는 강세 요소를 표현합니다. (강조)<br/>
+    우리는 모두
+    <em>구원</em>을 받을것 입니다!
+  </p>
+
+  <!-- 텍스트 요소 11강 포멧팅- mark, small, sub, sup태그 -->
+  <p>
+    mark태그는 <mark>하이라이트표시에</mark> 사용합니다<br/>
+    q태그나 blockquote태그에 사용해도 됩니다.<br/>
+    단순히 글자의 배경색을 칠하고 싶은것이라면 CSS를 사용하세요.
+  </p>
+
+  <p>small태그는 덧붙임 글 요소입니다.</p>
+  <hr>
+  <p><small>글자를 작게 만들고 싶은것 이라면 CSS요소를 이용하세요</small></p>
+
+  <p>
+    위첨자 요소는 sup태그, 아래첨자 요소는 sub태그를 사용합니다. <br>
+    5<sup>2</sup>, 각주<sub>1</sub>
+  </p>
+  
+  <!-- 텍스트 요소 12강 포멧팅- del, ins, code, kdb태그 -->
+  <p>
+    del태그는 <del>삭제된 요소</del>를 나타냅니다.(chrome에선 취소선) <br/>
+    ins태그는 <ins>추가된 요소</ins>를 나타냅니다.(chrome에선 밑줄)<br/>
+    따라서 밑줄이나 취소선을 위해 두 태그를 사용하지 말아야합니다.<br/>
+    cite속성과 datetime속성을 통해 언제 어떻게 바뀌었는지 변경점을 설명하는 리소스를 넣을수 있습니다.
+  </p>
+
+  <p>code태그는 인라인 코드요소를 나타냅니다.<br/>
+  pre는 블록요소 code태그는 인라인 요소입니다. <code>push()</code></p>
+
+  <p>여러줄의 코드를 나타내야 하면 pre태그 안에 code태그를 넣으세요</p>
+  <p>kbd태그는 키보드입력등의 사용자 입력을 나타냅니다. ex) <kbd>Ctrl</kbd> + <kbd>S</kbd></p>
+
+  <!-- 텍스트 요소 13강 a태그와 하이퍼링크 -->
+  <p>
+    a태그는 anchor태그입니다.<br/>
+    a태그를 이용하여 하이퍼링크를 만들수 있습니다.<br/>
+    href속성에 이동하고싶은 웹사이트주소를 입력하세요.
+  </p>
+
+  <p>주로 사용되는 href속성의 값<br/>
+    절대경로<br/>
+    <a href="https://naver.com">네이버</a><br/>
+    상대경로<br/>
+    <a href="./README.md">본 파일의 README.md</a><br/>
+    이메일/ 전화<br/>
+    <a href="000000@gmail.com">E-mail</a><br/>
+    <a href="tel:000-0000">전화(000-0000)</a>
+  </p>
+
+  <!-- 텍스트 요소 14강 a태그와 하이퍼링크2 -->
+
+  <p>
+    target속성을 통해 어디에 해당 링크를 띄울것인지 결정할수 있습니다.<br/>
+    기본값은 _self이며 현재 창에 링크를 엽니다.<br/>
+    _blank : 새 탭에 링크를 엽니다.<br/>
+    _parent : 현재 브라우징중인 창의 부모에 표시합니다. 부모요소가 없으면 _self처럼 작동합니다.<br/>
+    _top : 최상단 브라우징 맥락에 엽니다. 부모가 없으면 _self처럼 작동합니다.<br/>
+
+  </p>
+  <a href="https://naver.com" target="_blank">네이버를 새창에 열기</a>
+
+  <!-- 텍스트 요소 15강 엔티티(Entity) -->
+
+  <p>entity references는 HTML에서 예약어가 아닌 특수문자 표현을 위해 사용 하는 문자참조코드입니다.</p>
+
+  <p>다섯개의 스페이싱 (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</p>
+
+  <pre>
+    문단을 나타내는 태그는 &lt;p&gt;&lt;/p&gt;태그입니다.
+    &quot; 쌍따옴표
+    &apos; 따옴표
+    &amp; 엠퍼센트
+    &nbsp; 공백
+    구글에 entity reference chart를 검색하여 다양한 엔티티를 찾을수 있다.
+  </pre>
+
+</body>
+
+</html>
