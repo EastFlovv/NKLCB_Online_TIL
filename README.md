@@ -6,8 +6,8 @@ TIL을 Markdown언어를 통해 작성합니다.
 - [일차별 TIL 요점보기](#일차별-til-요점보기)
 
 ## 각 일차별 TIL 상세보기(링크)
-0. [2021.08.27[0일차] TIL]()
-1. [2021.08.28[1일차] TIL]()
+0. [2021.08.27[0일차] TIL](https://github.com/EastFlovv/TIL/tree/master/2021.08.27%5B0%EC%9D%BC%EC%B0%A8%5D)
+1. [2021.08.28[1일차] TIL](https://github.com/EastFlovv/TIL/tree/master/2021.08.28%5B1%EC%9D%BC%EC%B0%A8%5D)
 
 
 # 일차별 TIL 요점보기
