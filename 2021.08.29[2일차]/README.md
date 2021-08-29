@@ -18,6 +18,10 @@ HTML문서의 구조를 결정하는 요소에 대해 배웠습니다.
 - `<section>`는 `<article>`로 나타낼 수 없는 부분을 나누는 구획지만 `<div>`와 비교했을떄 분명한 목적이 존재하는 태그입니다.  
 따라서 `<div>`처럼 사용 해서는 안됩니다
 
+## 개인 학습
+기존에 듣던 강의를 통해 Vue.js를 이용한 영화 검색 사이트 클론코딩을 시작했습니다.  
+[Git바로가기](https://github.com/EastFlovv/Vue3-movie-web-clonecoding)
+
 ### 강의 학습 현황
 
 \> HTML강의 中 '구조를 나타내는 요소 - 컨테이너(div, span)'~ '구조를 나타내는 요소 - section'
