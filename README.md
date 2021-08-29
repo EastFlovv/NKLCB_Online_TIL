@@ -1,14 +1,15 @@
 # 네카라쿠배 온라인 프론트엔드 TIL 문서
 
 TIL을 Markdown언어를 통해 작성합니다.
-각 일차별 TIL을 하단의 링크를 통해 이동 할 수 있습니다.
+각 일차별 TIL와 실습, 복습 결과물을 하단의 링크를 통해 이동 할 수 있습니다.
 
 - [일차별 TIL 요점보기](#일차별-til-요점보기)
+- [학습 결과물 살펴보기](https://goofy-pike-2843c1.netlify.app/)
 
 ## 각 일차별 TIL 상세보기(링크)
 0. [2021.08.27[0일차] TIL](https://github.com/EastFlovv/TIL/tree/master/2021.08.27%5B0%EC%9D%BC%EC%B0%A8%5D)
 1. [2021.08.28[1일차] TIL](https://github.com/EastFlovv/TIL/tree/master/2021.08.28%5B1%EC%9D%BC%EC%B0%A8%5D)
-2. [2021.08.29[2일차] TIL]()
+2. [2021.08.29[2일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.08.29%5B2%EC%9D%BC%EC%B0%A8%5D)
 
 
 # 일차별 TIL 요점보기
