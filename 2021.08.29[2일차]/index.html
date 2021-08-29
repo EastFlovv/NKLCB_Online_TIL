@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 복습</title>
+</head>
+
+<body>
+
+  <h1>이 문서는 네카라쿠배 HTML 복습을 위해 만든 문서입니다.</h1>
+  <h2>HTML의 텍스트 요소와 구획요소 두가지를 복습합니다.</h2>
+  <h3>현재 h1 ~ h6요소를 통한 글자 쓰기를 하고있습니다.</h3>
+  <h4>글자 크기 조정을 위해 h태그를 사용해서는 안됩니다.</h4>
+  <h5>또한 h태그를 사용시 단계를 건너 뛰는 사용을 하면 안됩니다.</h5>
+  <h6>이러한 h6태그는 반드시 앞에 h5태그가 있어야 합니다.</h6>
+
+  <p>p태그는 문단 태그입니다. 지정한 CSS스타일링 태그가 없다면 브라우저 기본설정에 따라 문단간 공백이 발생합니다.</p>
+  <p>br태그는 개<br />행문자입니다</p>
+  <figure>
+    <blockquote>
+      blockquote태그는 block요소인 인용문 태그입니다.
+      p태그 안에서 사용할 수 없습니다.
+      cite 속성을 통해 인용문 출처를기록 할수있습니다
+    </blockquote>
+  </figure>
+
+  <p>
+    반면 q태그는 inline요소를 가진 인용문 태그이며 "를 통해 인용문 표시를 합니다.<br />
+    <q>너 자신을 알라</q>
+    또한 p태그 안에 포함될 수 있습니다.
+  </p>
+
+  <pre>
+    pre태그는 미리 서식을 지정한 텍스트이며 고정폭 글꼴을 사용하고
+     요소내 공          백 문자를 그대로 유지합니다. 
+     \    /\
+     )  ( ')    pre태그를 이용하여 만든 고양이
+    (  /  )
+     \(__)|
+  </pre>
+
+  <p>figure태그는 독립적인 콘텐츠롤 표현합니다. figcaption태그를 통해 설명을 붙일수 있습니다.</p>
+  <figure>
+    <img src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg" alt="과일">
+    <figcaption>과일사진</figcaption>
+  </figure>
+
+  <p>hr요소는 가로줄 태그입니다. hr태그를 스타일링 하기 위해선 CSS를 사용하여 스타일링 해야합니다.</p>
+
+  <hr/>
+
+  <p>addr 태그는 약어 태그입니다.</p>
+  <p>
+    world wide web은 약어로
+    <addr title="World Wide Web">WWW</addr> 입니다. <br />
+    윗줄의 WWW위에 마우스 커서를 올려 title속성으로 지정한 약어의 원래뜻을 확인하세요.
+  </p>
+
+  <address>
+    <p>
+      address태그는 주소태그입니다.<br/ >
+      e-mail, 웹사이트 주소도 통칭하여 나타냅니다. 자체적 특징보다 본문이 주소임을 의미할때 쓰입니다.
+    </p>
+  </address>
+
+  <figure>
+    <blockquote>
+      인용문을 사용할때 사용 하는 속성 cite가 아닌<br />
+      태그로서의 cite는 속성 cite와 다르게 사용자에게 보이는 출처문과 메세지입니다.
+    </blockquote>
+    <cite>나는 보이는 cite입니다.</cite>
+  </figure>
+
+  <p>bdo태그는 dir속성에 rtl, ltr을 통해 글의 방향을 결정합니다.</p>
+  <bdo dir="rtl">거꾸로 나열된 글씨</bdo>
+
+  <p>
+    <b>b태그</b>와 <strong>strong태그</strong>는 굵은 글씨를 만드는 태그이지만 <br />strong태그는 높은 중요도에 대해 표시하는 태그입니다.
+  </p>
+
+  <p>
+    <i>i태그</i>와 <em>em태그</em>는 기울인 글씨를 만드는 태그이지만 <br />em태그는 높은 강조 요소에에 대해 표시하는 태그이고 i태그는 주위와 구분해야 하는 부분을 나타냅니다.
+  </p>
+
+  <p>텍스트 포멧팅 태그중 mark태그는 <mark>하이라트 표시</mark>를 하며 small태그는<small>덧붙임 글 요소를 나타냅니다</small> </p>
+  <p>
+    sub태그와 sup태그는 각각 아래첨자, 위첨자요소를 나타냅니다. <br />
+    ex) 5<sup>2</sup>, 화차<sub>2</sub>
+  </p>
+
+  <del>del태그는 삭제된 요소를 나타냅니다.</del>
+  <ins>ins태그는 추가된 요소를 나타냅니다.</ins>
+  <p>밑줄이나 취소선을 이용하기 위해 위의 두 태그를 사용하지 마세요</p>
+
+  <p>
+    code 태그는 인라인 요소로 코드요소를 나타냅니다.<br />
+    ex) stack 자료구조에서 요소를 추가할땐 <code>push()</code>함수를 사용합니다.<br />
+    여러줄에 코드를 나타내야 하면 <code>pre</code>태그 안에 <code>code</code>태그를 사용하세요.
+  </p>
+
+  <p>
+    a태그는 하이퍼링크를 만들 수 있는 태그입니다 href 속성을 통해 웹사이트 주소 지정할수 있습니다.<br />
+    target 속성을 통해 해당 링크를 브자우저의 어느 탭에 띄울지 결정할 수 있습니다.
+  </p>
+  <a href="https://github.com/EastFlovv" target="_blank">나의 git hub로 이동</a>
+
+  <p>
+    entity는 HTML에서 예약어가 아닌 특수문자를 표현하기 위해 사용 하는 문자 참조 코드입니다. <br />
+    p태그를 표현 하기 위해 부등호를 entity를 통해 &lt;p&gt; 다음과 같이 작성하여 표현합니다.
+  </pre>
+
+</body>
+
+</html>
