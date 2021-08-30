@@ -11,7 +11,7 @@ TIL을 Markdown언어를 통해 작성합니다.
 0. [2021.08.27[0일차] TIL](https://github.com/EastFlovv/TIL/tree/master/2021.08.27%5B0%EC%9D%BC%EC%B0%A8%5D)
 1. [2021.08.28[1일차] TIL](https://github.com/EastFlovv/TIL/tree/master/2021.08.28%5B1%EC%9D%BC%EC%B0%A8%5D)
 2. [2021.08.29[2일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.08.29%5B2%EC%9D%BC%EC%B0%A8%5D)
-2. [2021.08.30[3일차] TIL]()
+2. [2021.08.30[3일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.08.30%5B3%EC%9D%BC%EC%B0%A8%5D)
 
 
 # 일차별 TIL 요점보기
