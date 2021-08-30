@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!-- 문자 인코딩은 UTF-8방식을 취합니다.(유니코드) -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- 뷰포트는 가로 넓이는 장치의 가로넓이만큼 사용하고 스케일은 기본값을 사용합니다. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>title은 단 하나만 있을수 있습니다.</title>
+</head>
+<body>
+
+  <h2>Ordered Lists (순서 있는 목록)</h2>
+  <p>순서있는 목록은 type속성을 통해 항목을 세는 요소를 바꿀수 있습니다.</p>
+
+  <ol>
+    <li>ol의 기본 타입은</li>
+    <li>숫자타입 입니다.</li>
+    <li>type = "1"(Defalut)</li>
+  </ol>
+  
+  <ol type = "i">
+    <li>이 타입은</li>
+    <li>로마 소문자타입 입니다.</li>
+    <li>type = "i"</li>
+  </ol>
+
+  <ol type = "I">
+    <li>이 타입은</li>
+    <li>로마 대문자타입 입니다.</li>
+    <li>type = "I"</li>
+  </ol>
+
+  <ol type = "a">
+    <li>이 타입은</li>
+    <li>알파벳 소문자타입 입니다.</li>
+    <li>type = "a"</li>
+  </ol>
+
+  <ol type = "A">
+    <li>이 타입은</li>
+    <li>알파벳 대문자타입 입니다.</li>
+    <li>type = "A"</li>
+  </ol>
+
+  <ol start = 8>
+    <li>start속성을 이용하면</li>
+    <li>중간부터 시작할수 있습니다.</li>
+    <li>start = 8</li>
+  </ol>
+
+  <ol>
+    <li>li태그의 value속성을 이용해도</li>
+    <li value = 4>중간부터 시작할수 있습니다.</li>
+    <li>2번쨰 li태그에 value = 4</li>
+  </ol>
+
+  <ol reversed>
+    <li>ol태그에 reversed 속성 추가하면</li>
+    <li>역순출력합니다.</li>
+    <li><code> &lt;ol reversed&gt;</code></li>
+  </ol>
+
+  <h2>Unordered Lists (순서가 없는 목록)</h2>
+  <p>순서가 없는 목록은 전역속성이 사용가능합니다.</p>
+  <ul>
+    <li>순서가 없는 목록은 불렛 포인트를 씁니다.</li>
+    <li>
+      내부에 다시 비순서 목록이 들어오면
+      <ul>
+        <li>불렛포인트의 색이 바뀝니다</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>Definition Lists (정의 목록)</h2>
+  <p>dl태그는 어떤 용어를 정의하거나 설명하는 목록입니다.<br/> 자식태그로 dt, dd태그를 사용합니다.</p>
+
+  <dl>
+    <dt>dl태그는</dt>
+    <dd>사전에서 사용하거나.</dd>
+
+    <dt>key:value 쌍을 가지는</dt>
+    <dd>메타데이터에서 사용합니다.</dd>
+
+    <dt>1 대 1 매치에선 하나의 용어에</dt>
+    <dd>하나의 설명이 들어가야합니다.</dd>
+
+    <dt>여러단어가</dt>
+    <dt>하나의 뜻을 가지고 있다면</dt>
+    <dt>dt태그를 여러개 사용하면 됩니다.</dt>
+    <dd>현재 3개의 단어가 하나의 설명을 가지는 형태의 구조입니다.</dd>
+
+    <dt>하나의 단어가</dt>
+    <dd>여러가지 뜻을 가지고 있다면</dd>
+    <dd>dd태그를 여러번 쓰면됩니다.</dd>
+  </dl>
+
+  <dl>
+    <div style="background-color: orange;">
+      <dt>div요소로 dt와</dt>
+      <dd>dd를 감싸서 요소를 만들수 있지만</dd>
+    </div>
+    <div style="background-color: green;">
+      <dt>dt와 dd의 형제요소로</dt>
+      <dd>div가 존재해서는 안됩니다. </dd>
+      <div style="background-color: red;">
+        <b>(웹표준 위반)</b>
+      </div>
+    </div>
+  </dl>
+
+  <h2>Table (표)</h2>
+  <p>Table은 표를 만드는 표입니다.<br/> 예전에는 table태그로 레이아웃을 잡았으나 지금은 그렇게 사용하지 않습니다.</p>
+
+  <p>
+    table속성 또한 HTML의 header, body, footer처럼 구획을 나누어 사용할 수 있습니다.<br/>
+    각 속성은 thead, tbody, tfoot입니다.<br/>
+    thead는 table태그 바로 다음에 와야하며 thead태그의 형제요소로 tr태그가 와서는 안됩니다.<br/>
+  </p>
+
+  <table>
+    <caption>
+      caption태그는 표 전체를 아우르는 설명을 쓰는 태그입니다.<br/>
+      caption은 table태그 내부의 첫번째 요소여야합니다. <br/>
+      caption태그를 가진 table이 figure안에 있는 유일한 자식이라면 caption대신 figcaption을 사용하세요.
+    </caption>
+    <!-- thead -->
+    <thead>
+      <tr>
+        <th>tr태그로 행을 선언하고</th>
+        <th>th태그는 행이나 열을 대표하는 통칭이 들어갑니다.</th>
+        <th>table은 기본 설정으로 구분선이 존재하지않습니다.</th>
+      </tr>
+    </thead>
+    <!-- tbody -->
+    <tbody>
+      <tr>
+        <th colspan = "3">대분류1</th>
+      </tr>
+      <tr>
+        <th>따라서 이 위치는 th가</th>
+        <td>지금 이 위치엔 data인 td로 작성 되어야 합니다</td>
+        <td>th는 scope라는 속성을 사용할수 있는데</td>
+      </tr>
+    </tbody>
+    <!-- tbody2 -->
+    <tbody>
+      <tr>
+        <th colspan = "3">대분류2</th>
+      </tr>
+      <tr>
+        <th scope ="row">col, row등을 통해 해당 행,열을 대표하는 값임을 알려줄수 있습니다. </th>
+        <td>왼쪽칸은 scope가 적용된 칸입니다.</td>
+        <td>scope는 보여지는 내용의 변화가 아닌 웹접근성과 관련된 요소입니다.</td>
+      </tr>
+    </tbody>
+    <!-- tfoot -->
+    <tfoot>
+      <tr>
+        <th>colspan속성을 통해</th>
+        <td colspan = "2" style = "background-color: pink;">칸을 늘려쓸수 있습니다 colspan = "2"</td>
+      </tr>
+    </tfoot>
+  </table>
+
+</body>
+</html>
