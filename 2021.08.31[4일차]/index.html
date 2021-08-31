@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko`">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>임베디드 요소 실습</title>
+  </head>
+  <body>
+    <p>img태그는 사진을 출력하는 태그입니다</p>
+    <img src = "./images/fruit.jpg" alt = "과일" />
+    <p>alt속성은 출력 오류시 대체 텍스트를 출력합니다</p>
+    <img src = "./images/fruit.jp" alt = "과일" />
+    <p>title속성을 통해 이미지에 마우스커서 호버링시 말풍선이 나오게 할 수 있습니다.</p>
+    <img src = "./images/fruit.jpg" alt = "과일" title ="title속성으로 만든 말풍선" />
+
+    <p>width, height속성을 통해 이미지 크기를 조절할 수 있습니다.</p>
+
+    <img src = "./images/fruit.jpg" alt = "과일" width= 200 height = 100/>
+
+    <p>srcset과 sizes를 이용하여 반응형 이미지르 만들수 있습니다.</p>
+
+    <!-- <img
+      src = "./medium.png"
+      srcset = 
+        "./small.png 300w ./medium.png 450w ./large.png 600w"
+      sizes = "(min-width: 600px) 600opx,
+                (min-widthL 450px) 450px,
+                300px"
+      alt = "responsive image"
+    /> -->
+
+    <p>
+      video태그를 이용하여 비디오를 출력할 수 있습니다.
+      video태그의 내용은 비디오가 브라우저에서 지원하지 않을경우 출력됩니다.
+    </p>
+
+
+    <video src = ./videos/file_example.mp4>지원하지 않는 브라우저입니다.</video>
+
+    <p>video태그는 src가 optional입니다. 사용하지 않는다면 내용에 source태그를 사용하세요.</p>
+
+    <video>
+      <source src = ./videos/file_example.mp4 />
+      지원하지 않는 브라우저입니다.
+    </video>
+
+    <p>controls속성을 통해 컨트롤 패널을 출력합니다</p>
+    <video controls>
+      <source src = ./videos/file_example.mp4 />
+      지원하지 않는 브라우저입니다.
+    </video>
+
+    <p>autoplay속성은 자동재생입니다. muted속성이 없으면 사용자 경험이슈로 인해 autoplay가 작동하지 않을수 있습니다.</p>
+    <p>loop속성은 영상을 반복재생합니다.</p>
+
+    <video autoplay muted loop>
+      <source src = ./videos/file_example.mp4 />
+      지원하지 않는 브라우저입니다.
+    </video>
+    
+  </body>
+</html>
