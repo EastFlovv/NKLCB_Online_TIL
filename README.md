@@ -15,6 +15,7 @@ TIL을 Markdown언어를 통해 작성합니다.
 4. [2021.08.31[4일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.08.31%5B4%EC%9D%BC%EC%B0%A8%5D)
 5. [2021.09.01[5일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.01%5B5%EC%9D%BC%EC%B0%A8%5D)
 5. [2021.09.02[6일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.02%5B6%EC%9D%BC%EC%B0%A8%5D)
+5. [2021.09.03[7일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.02%5B7%EC%9D%BC%EC%B0%A8%5D)
 
 
 # 일차별 TIL 요점보기
@@ -205,3 +206,42 @@ OT에 참여하여 느낀것은 지난 5일간의 공부양이 생각했던것 �
 ### 강의 학습 현황
 
 \> HTML강의 中 '목록과 표'~ '폼 관련 요소 - input - name, placeholder, autocomplete, required'
+
+## 2021.09.03 [7일차]
+
+어제에 이어 `form`관련 요소를 공부하고 이어서 전역속성과 CSS가 무엇인지에 대해 학습했다.  
+`form`요소를 공부하면서 평소에 자주 보지 못했던 `readonly`, `optgroup`, `datalist`에 대해 알게 되었다. 특히 `datalist`와 전역특성`data`를 헷깔리지 않도록 주의해야할것같다. 
+전역속성의 경우 `id`와 `class`, `data`등이 나오면서 본격적으로 CSS와 JS로 들어가게 될것을 느끼게 되었다.  
+CSS의 경우 써보기만 했지 제대로 된 정의를 배운것은 처음이였다.  
+특히 CSS의 적용모습이 Cascading의 모습과 매우 닮은것에 놀랐다.  
+게다가 어제 본 테스트의 정답을 확인 해본 결과 겨우 평균점을 넘긴것에 대해 너무 당황했다.  꽤 잘풀었다고 생각했는데 겨우 평균점을 넘긴 수준이라는것은 나의 공부가 어설펐음을 의미하는것 일것이다.  
+따라서 내일은 HTML의 복습하지 못했던 부분을 복습하면서 틀린 HTML문제를 오답노트 해보고 과제로 나온 HTML연습문제와 코딩테스트에 대한부분을 연습해볼 생각이다.
+
+
+## 공부한 내용
+- `disabled`은 `<input>`을 비활성화 시키고 값을 전달하지 않는다.
+- `readonly`는 `<input>`을 읽기전용 속성으로 만든다.
+- `step`, `min`, `max`를 통해 numberic type을 다룰수 있다.
+- `<button>`의 3가지 타입에 대해 공부했다.  
+- `<select>`와 `<option>`을 통한 드롭다운 메뉴를 만들수 있게 되었다.  
+- `<optgroup>`을 통해 `<option>`를 분류별로 그룹화 시킬수 있다.  
+- `list`와 `<datalist>`를 통해 추천요소를 만들 수 있다.
+- `<textarea>`를 통해 mutiline text를 작성할 수 있다.  
+- `id`와 `class`는 둘 다 식별자 이나 `class`는 중복사용이 가능하고 `id`는 중복사용해서는 안된다.
+- 전역 특성 `style`은 해당요소에 스타일을 적용할 수 있게한다.  
+- `title`은 요소와 관련된 추가정보를 제공하는 텍스트이다.
+- `lang`은 사용자의 언어와 텍스트가 어느 언어로 제공되고있는지 기술한다.
+- `data-*`는 HTML에 개발자가 지정한 추가정보를 저장하는 특성이다.
+- `draggable`은 요소의 드래그 가능여부를 결정하는 특성이다. 
+- `hidden`요소는 해당 요소를 숨기는 특성이다. `display`속성에 따라 재정의 될 수 있다.
+- CSS는 Cascading Style Sheet이며 HTML을 스타일링하는 언어이다.
+- CSS언어는 룰기반(Rule-based)언어이다. CSS를 통해 특정 요소나 요소의 집합의 규칙을 정의한다.
+- CSS의 적용법은 내부스타일, 인라인스타일, 외부스타일이 있다.
+- CSS의 요소들은 적용될때 케스케이딩 원칙에 따라 적용된다.
+
+
+### 강의 학습 현황
+
+\> HTML강의 中  
+'폼 관련요소 - input- disabled, readonly'~ 'textarea',  
+'전역속성' ~ 'CSS 소개'
