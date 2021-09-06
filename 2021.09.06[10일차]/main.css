@@ -1,0 +1,314 @@
+/* type selector */
+
+h2 {
+color : blue;
+}
+
+/* class selector */
+
+.orange {
+color : orange;
+}
+
+.green {
+color : green;
+}
+
+/* id selector */
+
+#welcome-title {
+color: red;
+}
+
+/* 속성선택자 */
+/* [attr] */
+/* target속성을 가진 a태그를 선택 */
+a[target] {
+color : hotpink;
+}
+/* [attr=value] */
+/* href속성 값이 https://google.com인 a태그 선택 */
+a[href="https://google.com"] {
+background-color: lawngreen;
+}
+
+/* atrr^=value */
+/* ^(캐럿)기호를 붙인 ^=은 ^=이후로 시작하는 단어를 모두 선택함 */
+/* a[href^="https"] 라면 href가 https로 시작하는 모든 a태그를 선택*/
+input[type^="te"]{
+background-color: mediumorchid;
+}
+
+/* attr$=value */
+/* value로 끝나는 속성을 선택 */
+a[href$=".org"]{
+font-style: italic;
+background-color: salmon;
+}
+
+/* attr*=value */
+/* *은 적어도 하나를 의미 중간에 포함되도 된다 */
+a[href*=".c"] {
+font-weight: 700;
+font-size: 30px;
+}
+
+/* 수도 클래스 셀렉터 = 가상 클래스 선택자 = 의사 클래스 선택자 */
+/* 가상클래스 선택자는 요소의 상태에 따라 다른 css출력 */
+/* Pseudu-class selector */
+
+li:first-child {
+  color : green;
+}
+
+/* selector로 선택된 형제요소중 첫번째 따라서 movie01의 movie클래스를 지우면 적용이 안됨 */
+.movie:first-child {
+  font-size: 42px;
+}
+
+span:last-child {
+  color : tomato;
+}
+
+/* n번쨰 요소를 선택 */
+li:nth-child(3){
+  color : olive;
+}
+/* 2n번쨰 요소에 적용 n은 제로넘버링 */
+li:nth-child(2n){
+  background-color: gray;
+}
+/* odd, even 사용가능 */
+li:nth-child(odd){
+  font-size: 10px;
+}
+
+/* first-child vs first-of-type */
+
+/* first-of-type */
+/* 타입중에 첫번쨰 */
+section p:first-of-type {
+  color :red;
+}
+
+section p:last-of-type {
+  color : blue;
+}
+
+/* class:first-of-type을 하면 모든 타입의 첫번째 요소가 다 선택된다. */
+
+/* n, even, odd 모두 가능 */
+section p:nth-of-type(2) {
+  color :green;
+}
+
+/* 가상 클래스 선택자 not */
+
+/* :not() */
+
+/* class pw빼고 나머지에 적용 */
+/* not()의 괄호 안에는 selector가 올 수 있다. */
+/* form input:not(.pw) {
+  background-color: peru;
+} */
+form input:not([type=submit]) {
+  background-color: peru;
+}
+
+/* link, visited : 동적 가상클래스 선택자 */
+
+/* 링크를 방문하지 않았을때 */
+a:link {
+  color : deepskyblue;
+}
+/* 링크를 방문한적 있을 때 */
+a:visited {
+  color : yellow;
+}
+
+/* hover, active, focus : 동적 가상클래스 선택자 */
+
+input[type=button]:hover {
+  background-color: aqua;
+  border:none;
+}
+input[type=button]:active {
+  background-color: black;
+  color: white;
+  border:none;
+}
+
+input[type=text]:focus{
+  background-color: teal;
+}
+
+/* enable, disable, checked : 동적 가상클래스 선택자 */
+
+input[type=text]:enabled{
+  background-color: lightblue;
+}
+input[type=text]:disabled{
+  background-color: silver;
+}
+input[type=radio]:checked{
+  outline: 3px solid red;
+}
+
+input[type=checkbox]:checked{
+  outline: 3px solid blue;
+}
+
+/* 가상 요소 선택자 before, after */
+/* selector::___, : 1개로도 됨 but css3부터 ::으로 권장 */
+/* 실제로 존재하지 않는 요소나 범위를 만들어서 스타일을 적용 */
+/* 복사도 선택도 안된다. CSS로만든 가상의 요소이기 떄문에 textContent가 아닌 꾸밈요소로 인식 */
+/* 뱃지나 메뉴사이 구분점 구분바로 사용 */
+.mov::before{
+  color: indianred;
+  content: "before ";
+}
+
+.mov::after{
+  color: indianred;
+  content: " after";
+}
+
+/* 가상요소 선택자 first-letter, first-line, selection */
+
+/* 첫글자에 대한 선택요소 */
+.lorem::first-letter {
+  color: red;
+  font-size: 30px;
+}
+/* before로 컨텐츠 추가시 before에 색이 들어감 */
+.lorem::before {
+  content:'Before ';
+}
+/* 첫번째 줄에대한 가상요소 */
+.lorem::first-line {
+ background-color: indigo;
+}
+/* 선택영역에 대한 스타일 변경(드래그) */
+.lorem::selection {
+    color : black;
+    font-weight: 700;
+    background-color: magenta;
+}
+
+/* 선택자 결합 */
+/* selector combinators */
+/* 하위, 자식, 형제 선택자, 그룹화 */
+
+/* 첫선택자 ' ' 추가작성 */
+/* 앞쪽의 태그로 먼저 선택후 뒤의 태그로 찾아서 적용 */
+/* 하위선택자 결합 ul태그 밑의 모든 li태그의 형제들중 마지막을 고름 */
+ul li:last-of-type {
+  color :red;
+}
+
+#ool li:first-of-type {
+  color :blue;
+  font-size: 20px;
+}
+
+/* 자식 선택자 결합 */
+/* >을 통해 바로 자식임을 선언 */
+ul > li:last-of-type {
+  font-size: 50px;
+}
+
+
+/* 형제 선택자 결합 */
+/* 앞의 요소와 같은 부모를 가진 요소중에 선택 */
+/* 뒤의 selector는 앞의 선택자보다 뒤에 있어야한다. */
+
+/* 일반 형제 선택자 결합 (~) */
+/* 갯수와 상관없이 해당하면 뒤의 요소가 다 됨 */
+code ~ p {
+  color : orange;
+  font-size: 30px;
+}
+
+/* 인접 형제 선택자 결합 (+) */
+/* 인접한 형제만 고름 */
+code + p {
+  background-color: blue;
+}
+
+/* 그룹화 */
+/* ,를 통해 여러 요소에 같은 스타일 적용 */
+code, span {
+  background-color: mediumaquamarine;
+}
+
+/* 범용 선택자 (Universal Selector) */
+/* css파일 맨 위에 작성하는게 좋다. */
+/* *은 모든 요소 */
+/* .red {} 는 *.red{}와 같다. 다만 생략할 뿐*/
+.uni {
+  font-style: oblique;
+}
+/* 범용 선택자를 통해 uni클래스를 가진 code태그 뒤의 아무요소나 배경색을 입힌다. */
+div>code.uni + * {
+  background-color: mediumslateblue;
+}
+
+/* 상속제어 */
+
+div {
+  border: 1px solid black;
+}
+ /* 자식에게 요소가 없다면 부모요소를 상속한다. */
+.parent {
+  color: blue;
+  font-size: 40px;
+}
+/* initaial은 상속을 끊고 기본값으로 세팅하는 값 */
+.child2{
+  /* color : initial;
+  font-size: initial; */
+
+  /* 모든 상속을 받지않음 */
+  all : initial; 
+}
+
+/* inherit은 무조건 상속을 받는 값 */
+
+.parent2 {
+  color :red;
+  font-size: 40px;
+}
+
+.child4 {
+  color : green;
+}
+
+.parent2 * {
+  color :inherit; 
+}
+
+
+/* unset */
+/* 1. 부모로 부터 상속받을 값이 존재할때 : inherit */
+/* 2. 부모로 부터 상속받을 값이 없을때 : initial */
+
+.child3 {
+  all : unset;
+}
+
+/* 우선순위 */
+/* 캐스케이딩원칙 */
+
+/* 
+  스타일 우선순위    
+
+  1. 선언된 곳
+      HTML파일내의 선언 위치
+      - link태그와 style태그의 위치관계 inline은 가장높다
+      브라우저가 어떤것을 마지막에 읽느냐
+  2. 명시도 (적용범위가 적을수록 명시도가 높은것)
+      inherited < * < type(tag) < class/attribute/pseudo < id < inline < !important
+  3. 코드 위치
+
+
+*/

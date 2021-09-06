@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <h1 id="welcome-title">welcome</h1>
+
+  <h2>movie list</h2>
+
+  <ul>
+    <li class="orange green">toy stroy</li>
+    <li>zootopia</li>
+    <li class="orange">inside out</li>
+  </ul>
+
+  <h2>coffee list</h2>
+
+  <ol>
+    <li>americano</li>
+    <li>latte</li>
+  </ol>
+
+  <h3>애국가</h3>
+  <p class="orange">동해물과 백두산이 마르고 닳도록</p>
+  <p>하느님이 보우하사 우리나라 만세</p>
+
+  <h2>link</h2>
+  <a href="https://naver.com" target="_blank">naver</a>
+  <a href="https://google.com">google</a>
+  <a href="https://404notfound.org">404notfound</a>
+  <input type="text" name="txt" id="txt">
+
+  <h2>가상클래스 선택자</h2>
+  <ul>
+    <li>movie01</li>
+    <li class="movie">movie02</li>
+    <li class="movie">movie03</li>
+    <li class="movie">movie04</li>
+    <li class="movie">movie05</li>
+  </ul>
+
+  <ol>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Cherry</li>
+  </ol>
+
+  <h2>title</h2>
+  <p>
+    <span>동해물과 백두산이 마르고 닳도록</span>
+    <span>하느님이 보우하사 우리나라 만세</span>
+    <span>무궁화 삼천리 화려 강산</span>
+  </p>
+
+
+
+  <h2>가상클래스 선택자 of-type</h2>
+
+  <section>
+    <div>toy stroy</div>
+    <p>zootopia</p>
+    <p>inside out</p>
+    <p>finding nemo</p>
+    <div>coco</div>
+  </section>
+
+  <h2>가상클래스 선택자 not</h2>
+
+  <form>
+    <input type="text" placeholder="name">
+    <input type="email" placeholder="email">
+    <input class="pw" type="password" placeholder="password">
+    <input type="submit">
+  </form>
+
+  <h2>동적 가상클래스 선택자 link, visited</h2>
+  
+  <a href="#">Example Link</a>
+  
+  <h2>동적 가상클래스 선택자 hover, active, focus</h2>
+  
+  <input type="button" value="clickMe">  
+  <input type="text">
+
+  <h2>동적 가상클래스 선택자 enabled, disabled, checked</h2>
+
+  <div>
+    <input type="text" placeholder="1">
+    <input type="text" placeholder="2">
+    <input type="text" placeholder="3" disabled>
+  </div>
+
+  <div>
+    <input type="radio" name="myinput" id="yes">
+    <label for="yes">yes</label>
+    <input type="radio" name="myinput" id="no">
+    <label for="no">no</label>
+  </div>
+
+  <div>
+    <input type="checkbox" name="checkMe" id="checkme">
+    <label for="checkme">Check Me!</label>
+  </div>
+  
+  <h2>가상 요소 선택자 before, after </h2>
+
+  <div class="mov">mov01</div>
+  <div class="mov">mov02</div>
+  <div class="mov">mov03</div>
+  <div class="mov">mov04</div>
+  <div class="mov">mov05</div>
+
+  <h2>가상요소 선택자 first-letter, first-line, selection</h2>
+
+  <p class='lorem'>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque optio sapiente nemo! Recusandae alias accusamus eum, autem doloremque sit laboriosam, est magni delectus, assumenda debitis distinctio iusto numquam dignissimos nihil!
+  </p>
+  <p class='lorem'>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque optio sapiente nemo! Recusandae alias accusamus eum, autem doloremque sit laboriosam, est magni delectus, assumenda debitis distinctio iusto numquam dignissimos nihil!
+  </p>
+  <p class='lorem'>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque optio sapiente nemo! Recusandae alias accusamus eum, autem doloremque sit laboriosam, est magni delectus, assumenda debitis distinctio iusto numquam dignissimos nihil!
+  </p>
+
+  <h2>선택자 결합</h2>
+
+  <ul>
+    <li class="combi">list1
+      <ol>
+        <li>리스트1</li>
+        <li>리스트2</li>
+      </ol>
+    </li>
+    <li class="combi">list2</li>
+    <li class="combi">list3</li>
+    <li class="combi">list4</li>
+  </ul>
+
+  <ol id="ool">
+    <li class="combi">리스트1</li>
+    <li class="combi">리스트2</li>
+    <li class="combi">리스트3</li>
+  </ol>
+  
+  <h2>형제 선택자</h2>
+  <div>
+    <p>P</p>
+    <span>Span</span>
+    <code>Code</code>
+    <p>P2</p>
+    <div>Div</div>
+    <p>p3</p>
+  </div>
+  
+  <h2>범용선택자</h2>
+  <div>
+    <p class="uni">P</p>
+    <span class="uni">Span</span>
+    <code class="uni">Code</code>
+    <p>P2</p>
+    <div class="uni">Div</div>
+    <p>p3</p>
+  </div>
+
+  <h2>상속제어 inital</h2>
+  <div class="parent">
+    parent
+    <div class="child1">child1</div>
+    <div class="child2">child2</div>
+  </div>
+  
+  <h2>상속제어 inherit</h2>
+  <div class="parent2">
+    parent2
+    <div class="child3">child3</div>
+    <div class="child4">child4</div>
+  </div>
+
+</body>
+
+</html>
