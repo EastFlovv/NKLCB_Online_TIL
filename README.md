@@ -19,6 +19,7 @@ TIL을 Markdown언어를 통해 작성합니다.
 5. [2021.09.04[8일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.04%5B8%EC%9D%BC%EC%B0%A8%5D)
 5. [2021.09.05[9일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.05%5B9%EC%9D%BC%EC%B0%A8%5D)
 5. [2021.09.06[10일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.06%5B10%EC%9D%BC%EC%B0%A8%5D)
+5. [2021.09.07[11일차] TIL]()
 
 
 # 일차별 TIL 요점보기
@@ -375,3 +376,46 @@ CSS로 넘어오고 학습할 내용이 많아져서 지치긴 하지만 모르�
 ### 강의 학습 현황
 
 \> CSS강의 '선택자(셀렉터)'
+
+## 2021.09.07 [11일차]
+
+오늘은 CSS요소 폰트와 박스모델 그리고 그 안에 들어가는 값과 단위에 대해 공부했다.  
+`em`, `rem`, `vh`, `vw`와 같은 속성들이 실무에서 많이 쓰인다고 알고있었지만 독할을 할 때는 그저 `px`만 사용했었는데 직접 배우게 되면서 상당히 유용해보였다.  
+font에 관한 내용은 대게 아는 내용이여서 복습하듯이 공부했다.  
+margin collapsing은 처음 보는 개념이라 이해하는데 시간이 조금 걸렸던것같다.  
+요지만 보면 content간에 아무런 경계없이 붙어있을경우 더 큰 margin을 사용하는것 같다.  
+`word-break`나 `spacing`관련 내용 또한 일반적인 유튜브 css에서 비중있게 다루지 않던 내용이라 배웠던 내용이라고 마음을 놓고 공부해서는 안되겠다는 생각이 들었다.  
+
+## 공부한 내용
+- font의 크기, 기울임, 굴기를 정하는 `font-size`, `font-style`, `font-weight`를 배웠다.
+- `font-fmaily`는 글꼴을 지정하는데 여러요소를 나열해 적용되지 않을경우 다른 글꼴로 대체할 수 있다.  
+- `line-height`는 글자의 줄높이를 지정한다. 숫자를 입력해 배율적용한다.  
+- 단축속성 `font`를 통해 글꼴을 스타일링 할 수 있다. size와 family는 필수요소.  
+- `letter-spacing`, `word-spacing`은 각각 글자, 단어간의 간격을 조정한다.
+- `text-align`은 텍스트 정렬속성이다. inline에서 사용불가
+- `text-indent`는 들여쓰기를 한다.
+- `word-break`는 한중일 텍스트와 그외의 텍스트가 값을 다르게 쓴다.  
+- `word-transform`은 해당하는 글자요소에 일관된 스타일을 적용한다.
+- 절대길이의 값으로 `px`을 사용한다.
+- `em`은 해당요소의 글꼴 크기를 기준으로 `rem`은 root의 글꼴 크기를 기준으로 한다.
+- `vh`, `vw`는 뷰포트를 기준으로 하는 상대길이이다.
+- `vmin`, `vmax`는 가로세로 관계없이 긴 요소가 `vmax`이다.  
+- %는 부모요소를 기준으로 값을 계산한다.
+- 함수표기법을 통해 값을 지정할 수 있다. IE에서 사용불가
+- 박스모델은 content, padding, border, margin으로 구성된다
+- width, height를 통해 요소의 크기를 지정한다.
+- `(max/min)-(width/height)`를 통해 최대 최소 크기를 지정할 수 있다.
+- `margin`은 외부여백을 나타내며 각면의 크기를 다르게 줄 수 있다.
+- `margin collapsing`은 여러 블록요소의 위/아래 `margin`이 경우에 따라 크기가 큰 `margin`으로 결합되는 현상이다.
+- `padding`은 내부여백이다.  
+- `border`는 테두리이며 -style, -width, -color를 통해 모양, 두께, 색을 다르게 줄 수 있고 각면마다 다르게 지정할 수있다.
+- 그냥 `border`만 사용하면 shorthand요소이다.  
+- `box-sizing`을 통해 요소의 크기 지정 방법을 정할 수 있다.
+
+
+## 학습 결과물
+오늘의 학습결과물은 TIL 최상위 파일의 '학습 결과물 살펴보기 링크에 추가되었습니다.
+
+### 강의 학습 현황
+
+\> CSS강의 '폰트관련속성' ~ '박스모델'
