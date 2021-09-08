@@ -20,6 +20,7 @@ TIL을 Markdown언어를 통해 작성합니다.
 5. [2021.09.05[9일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.05%5B9%EC%9D%BC%EC%B0%A8%5D)
 5. [2021.09.06[10일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.06%5B10%EC%9D%BC%EC%B0%A8%5D)
 5. [2021.09.07[11일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.07%5B11%EC%9D%BC%EC%B0%A8%5D)
+5. [2021.09.07[12일차] TIL]()
 
 
 # 일차별 TIL 요점보기
@@ -419,3 +420,42 @@ margin collapsing은 처음 보는 개념이라 이해하는데 시간이 조금
 ### 강의 학습 현황
 
 \> CSS강의 '폰트관련속성' ~ '박스모델'
+
+## 2021.09.08 [12일차]
+
+내일 있을 테스트를 대비해 진도를 일찍 나가기로 했다.  
+이전의 테스트의 경험으로는 범위가 사실상 그 주의 모든 학습과정이였다.  
+게다가 추가적인 내용이 더욱 나와 진도를 조금 서둘렀다.  
+레이아웃 요소와 색상, 배경에 관한 요소를 공부했다.  
+`float`이나 색상 지정의 `HexCode` 그리고 `opacity`와 `rgba()`의 차이 등 주의해서 공부해야할 내용이 곳곳에 보인다.  
+`position: absolute`의 경우 부모요소를 찾는 명확한 기준을 알게됬다.
+`background`요소중 `background-origin`은 처음에 이해가 잘 안됬다. 각 값에 따른 배경의 위치를 잘 알아둬야 문제를 안틀릴것 같다.
+
+## 공부한 내용
+- `block`요소는 크기 지정이 되며 세로로 배치된다.  
+- `inline`요소는 크기지정이 되지 않으며 가로로 배치된다.
+- `inline-block`은 크기지정이 되며 가로로 배치된다.  
+- `flaot`은 요소를 normal flow에서 빼 띄워두듯이 배치한다.
+- `position`의 값을 통해 요소의 위치를 바꿀 수 있다.
+- `position: relation`은 자기자신을 기준으로 배치한다.
+- `position: absolute`는 `position: static`이 아닌 부모요소를 기준으로 배치한다.
+- `position: fixed`는 뷰포트를 기준으로 배치한다.
+- `position: sticky`는 스크롤 요소를 기준으로 배치한다.
+- `overflow`는 넘침요소에 대한 처리를 지정한다.
+- `z-index`는 정수값을 사용하며 높은 값 일수록 위로 배치된다.
+- 색상은 키워드, `HexCode`, `rgb()`, `rgba()`로 표현할 수 있다.
+- `opacity`는 요소의 불투명도를 조절한다 `raba()`의 투명도 조절과 달리 content까지 영향을 받으므로 조심해야 한다.
+- `background-color`, `background-image`는 배경의 색과 이미지를 지정한다. `background-color`가 `background-image`보다 뒤에 위치한다.
+- `background-repeat`은 이미지의 반복을 지정한다.  
+- `background-position`은 이미지의 위치를 지정한다. 키워드와 length값을 사용할 수 있다.
+- `background-origin`은 배경요소가 어디에서 시작할지 지정한다.
+- `background-size`는 이미지의 크기를 지정한다. `contain`은 최소길이를 기준으로 `cover`는 최대길이를 기준으로 한다.
+- `background`는 `background-`요소의 단축속성이며 몇가지 규칙에 따라 작성되어야한다.
+
+
+## 학습 결과물
+오늘의 학습결과물은 TIL 최상위 파일의 '학습 결과물 살펴보기 링크에 추가되었습니다.
+
+### 강의 학습 현황
+
+\> CSS강의 '레이아웃' ~ '색상과 배경'

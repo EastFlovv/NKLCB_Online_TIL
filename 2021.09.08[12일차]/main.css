@@ -1,0 +1,264 @@
+/* 레이아웃 */
+/* display : block, inline, inline-block */
+
+/* inline (span
+  -영역의 크기가 내부 콘텐츠 크기로 정해진다
+  -margin, padding의 top/bottom을 줄 수 없음
+  - 여러 요소가 가로배치가 됨
+  
+  block (div
+  - 영역크기 width, height로 지정가능
+  - width지정 없으면 가로 전체 차지
+  - 여러 요소가 새로배치됨
+  
+  inline-block  (input
+  -영역의 크기를 width, height로 지정가능
+  - 여러 요소가 가로배치가 됨
+*/
+
+.lot{
+  display : block;
+}
+
+/* display : none */
+/* 요소를 레이아웃에서 완전히 배제함 */
+/* visibility : hidden */
+/* 요소가 자리를 차지하고 있지만 보이지 않음 */
+
+.box1{
+  width: 250px;
+  height: 250px;
+  background-color: darkseagreen;
+}
+.box2{
+  width: 250px;
+  height: 250px;
+  background-color: goldenrod;
+  /* display: none; */
+  visibility: hidden;
+}
+.box3{
+  width: 250px;
+  height: 250px;
+  background-color: darkturquoise;
+}
+
+/* float */
+/* 요소가 normal flow에서 빠져나와 텍스트 및 인라인 요소가 자기 컨테이너를 감싸는 형태를 지정합니다. */
+/* normal flow 일반대열 */
+/* 요소의 레이아웃을 변경하지 않을때 웹페이지요소가 자기자신을 배치하는 방법 */
+
+.imgg{
+  float:left;
+  width: 100px;
+  height: 100px;
+  margin : 10px;
+}
+
+/* position : 요소의 위치를 이동시킴*/
+/* 기본값 static : normal flow에 따라 배치*/
+
+div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+/* position : relative */
+/* normal flow로 배치를 한 뒤 자기자신을 기준으로 이동함 */
+
+.rel{
+  background-color: lightskyblue;
+  position: relative;
+  bottom :20px;
+  left: 20px;;
+}
+/* position: relative사용시 top, left, bottom, right사용가능 left: 10px은 요소를 왼쪽에서 10px만큼 떨어트린다 (우측이동)*/
+/* position: relative에서 반대 방향을 적용시 top과 left를 우선한다. */
+
+/* ///////////////// */
+
+/* position : absolute */
+/* 요소를 일반적 문서흐름에서 제거하고 페이지 레이아웃에 공간도 배정하지 않음 */
+/* 조상 요소중 position이 static이 아닌 요소를 기준으로 배치한다. */
+/* 조상요소중 position이 static이 아닌요소가 없다면 body를 기준으로 함 */
+
+.absol {
+  position: absolute;
+  background-color: magenta;
+  left : 80px;
+  border-radius: 20px;
+}
+
+/* position: fixed */
+/* 요소를 일반적 문서흐름에서 제거하고 뷰포트의 초기 컨테이닝 블록을 기준으로 삼는다 (body) */
+/*  */
+.fixed{
+  position: fixed;
+  top: 500px;
+  right: 100px;
+  background-color: palegoldenrod;
+}
+
+/* postition: sticky */
+/* 일반적 문서흐름에 맞추어 배치하고, 가자가까운, 스크롤이 되는 조상을 찾아간다. */
+
+.stickyP{
+  position: sticky;
+  background-color: palegreen;
+  top: 100px;
+  left: 200px;
+}
+
+.stickyC{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  /* top: 100px;
+  left: 100px; */
+}
+
+/* overflow는 overflow-x(y)두 속성을 합친 shorthand속성입니다 */
+/* overflow: visible (기본값) */
+/* overflow: hidden -> 넘침요소를 숨김 */
+/* overflow: scroll -> 넘침요소를 스크롤 바로 만듬 */
+/* overflow: auto -> 브라우저가 동작을 고름 */
+
+.overf{
+  background-color: paleturquoise;
+  width : 200px;
+  height: 100px;
+  overflow: scroll;
+}
+
+/* z-index */
+/* 요소의 z축 순위를 지정합니다. */
+/* 더 큰 z-index값을 가진 요소를 위로 올립니다 */
+/* 기본값 auto */
+/* position이 static이면 사용불가 */
+/* 음수가능 */
+.zidx1{
+  z-index: 3;
+  background-color: plum;
+  position: relative;
+  z-index: 3;
+}
+.zidx2{
+  z-index: 2;
+  background-color: rosybrown;
+  margin-top: -30px;
+  margin-left: 80px;
+  position: relative;
+  z-index: 2;
+}
+.zidx3{
+  z-index: 1;
+  background-color: slateblue;
+  margin-top: -30px;
+  margin-left: 170px;
+  position: relative;
+  z-index: 1;
+}
+
+
+/* /////////////////////////////// */
+/* 색상과 배경 */
+
+/* color 속성은 키워드를 사용하여 작성할 수 있다. */
+/* 키워드 외의 color속성 표현을 위해 다음과 같은 방법이 있다. */
+/* RGB 3차원 좌표계 사용 #+16진수, rbg(), rbga()의 함수형 표기법 */
+/* 헥사컬러 : # __ __ __ 두개씩 각 자리별로 R,G,B이며 00~FF까지 */
+/* RGB rgb(_, _, _) 각 자리에 0 ~ 255까지 */
+/* RGBA rgba(_, _, _, _) 각 자리에 0 ~ 255, 마지막은 투명도로 0 ~ 1 */
+/* HSL 실린더형 좌표계 사용 (hsl(), hsla()의 함수형 표기법) */
+
+.hexColor {
+  /* background-color: ; */
+}
+
+
+/* opacity */
+/* 요소의 불투명도를 설정하는 요소 */
+/* 0.0 ~ 1.0의 값을 가짐 %로도 표현가능 0이 완전투명 1이 완전불투명 */
+/* content 까지 투명해진다. 배경색의 투명도만 조절하는 rgba()와 착오 주의 */
+/* 자식요소는 opacity를 상속하지 않는다 */
+.floating-box {
+  width: 150px;
+  height: 150px;
+
+  position: fixed;
+  top : 10px;
+  left: 10px;
+  background-color: orange;
+  opacity: 0.5;
+}
+
+
+/* background-color / background-image */
+/* 배경색과 배경이미지를 삽입하는 요소 */
+/* background-color는 키워드 헥사코드 rgb, rbga다 사용가능 */
+/* backgound-color는 background-image의 뒤에 랜더링된다. */
+/*  */
+
+.colorimg{
+  width: 500px;
+  height: 500px;
+  background-color: orange;
+  background-image: url("https://pics.clipartpng.com/midle/Realistic_Green_Tree_PNG_Clip_Art-1102.png");
+}
+
+
+/* background-repeat */
+/* 배경 이미지의 반복 방법을 지정하는 요소 */
+/* 가로/세로축을 따라 반복 할 수 있고 아예 반복하지 않을수도 있다. */
+/* 기본값은 repeat로 요소를 가득채울때까지 반복 */
+/* repeat-x, reapeat-y로 가로세로 반복 가능 */
+
+
+.repeat{
+  width: 500px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-image: url("https://www.belkin.com/medias/belkin-home-icon-products-v01-r01-us-100x100-x2.png?context=bWFzdGVyfHJvb3R8MzA5MnxpbWFnZS9wbmd8aDk0L2hhYS84ODkwNTc3MTI1NDA2LnBuZ3xjOTAwYzIxMjY3NzE3ZjcwODI0NDVlNGU0OWUyODFlMGFjOThhODRjYWU2YTQ1ZDMyMDllZmM5N2UyY2Y2MDFm");
+}
+
+/* background-position */
+/* 백그라운드 이미지의 위치를 변경할 수 있는 요소이다. */
+/* background-position: __ __ 각각 x, y의 좌표값을 입력한다. */
+/* left, right, center, top과 같은 키워드로도 작성이 가능하다 */
+
+.bgP{
+  /* background-position: 100px 190px; */
+  background-position: top center;
+}
+
+/* background-origin */
+/* 배경의 원점을 border, 테두리 내부, padding중 하나로 지정합니다. */
+/* content-box : 컨텐츠 시작지점 */
+/* padding-box : padding 시작지점 기본값 */
+/* border-box : 테두리 시작지점 */
+.bgorigin{
+  padding : 40px;
+  background-origin: content-box;
+  border : 4px solid red;
+}
+
+/* background-size */
+/* 백그라운드 이미지의 크기를 설정한다. 늘리거나 줄이고 공간에 맞출 수도 있다. */
+/* 기본값 : auto */
+/* contain : 요소 안을 가득채움 (최소길이)기준, 비율은 유지 */
+/* cover : 요소 안을 가득채움 (최대길이)기준, 비율은 유지*/
+/* 원하는 사이즈 지정(length), %도 사용가능 %는 가로값을 기준으로 한다*/
+
+.bgsize{
+  width : 1200px;
+  height : 500px;
+  background-size: contain;
+}
+
+/* background (shorthand) */
+/* 색상 이미지 원점 크기 반복 등을 한번에 지정 */
+/* background: url('#') no-repeat green; 처럼 공백으로 각 값을 구분*/
+/* 단 /를 통해 구분해야하는 속성도 있다. */
+/* background-color는 가장 마지막에 위치해야한다. */
+/* backgound-size는 background-postion값의 뒤에 와야하며 /로 구분한다 */
