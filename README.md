@@ -20,7 +20,8 @@ TIL을 Markdown언어를 통해 작성합니다.
 5. [2021.09.05[9일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.05%5B9%EC%9D%BC%EC%B0%A8%5D)
 5. [2021.09.06[10일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.06%5B10%EC%9D%BC%EC%B0%A8%5D)
 5. [2021.09.07[11일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.07%5B11%EC%9D%BC%EC%B0%A8%5D)
-5. [2021.09.07[12일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.08%5B12%EC%9D%BC%EC%B0%A8%5D)
+5. [2021.09.08[12일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.08%5B12%EC%9D%BC%EC%B0%A8%5D)
+5. [2021.09.09[13일차] TIL]()
 
 
 # 일차별 TIL 요점보기
@@ -459,3 +460,45 @@ margin collapsing은 처음 보는 개념이라 이해하는데 시간이 조금
 ### 강의 학습 현황
 
 \> CSS강의 '레이아웃' ~ '색상과 배경'
+
+## 2021.09.09 [13일차]
+
+지난 시험이 학습계획표에 기재된 내용보다 앞서나간 문제가 나왔기 떄문에 오늘은 이번주 내용을 마무리 짓기 위해 `transform`과 `transition`, `animation`을 공부했다.  
+`transform`, `transition`은 이전에 공부했던 내용이라 진도에 문제가 없었다.  
+`animation`요소를 공부할때 `keyframes`를 통한 `animation`세팅을 미리하는것을 알게되었다.  
+그렇다면 `keyframes`를 통한 `animation`작업이 `transform`, `transition`보다 좋을텐데 왜 `transform`과 `transition`을 이용하는지 의문이긴 하다.  
+테스트 내용은 그다지 어렵지 않았다. 원래 알고있던 내용도 있고 오늘 배우게 된 요소들도 있어서 풀만했다.  
+확실히 지난주에 공부했던 양보다 이번주의 양이 배는 많아서 테스트를 준비하는게 힘들었지만 막상 테스트를 보고나니 `grid`, `flex`를 물어보는것을 보고 공부를 더 많이 해야겠다고 느낀다.  
+
+
+## 공부한 내용
+- `transform`을 통해 요소의 크기, 회전, 기울이기, 이동효과등을 줄 수 있다.  
+- `scale()`함수는 요소의 크기를 지정한다.
+- `rotate()`함수는 요소를 회전시킨다.
+- `translate()`함수는 요소를 이동시킨다.
+- `skew()`함수는 요소를 기울인다.
+- `transform-origin`은 `transform`의 효과가 적용될 원점을 변경하는 속성이다.
+- `transition`은 전환효과를 나타낸다.
+- `transition-property`는 전환효과가 적용될 요소를 선택한다.
+- `transition-duration`은 요소가 바뀌는데 걸리는 시간을 지정한다.
+- `transition-delay`는 요소에 `transition`효과가 적용되기까지의 지연시간을 나타낸다.
+- `transition-timing-function`은 요소가 변하는동안 중간에 어느정도의 변화를 가지는지 정한다.
+- `transition`요소들은 단축속성 `transition`을 통해 표현할 수 있다.
+- `transition`과 `transform`을 합쳐 효과를 만들 수 있다.
+- `@keyframes`를 통해 애니메이션의 특정지점에 효과를 넣을 수 있다.
+- `animation-name`에 키프레임의 이름을 넣어 사용한다.
+- `animation-duration`은 애니메이션의 한 사이클이 몇초에 걸처 재생될지 결정한다.
+- `animation-delay`는 사이클의 지연시간을 설정한다. 음수도 사용가능하다.
+- `animation-timing-function`은 애니메이션이 중간에 어느정도 변화를 가지는지 정한다.
+- `animation-iteration-count`를 통해 애니메이션의 재생횟수를 정한다.
+- `animation-direction`을 통해 키프레임의 재생방법을 선택한다.
+- `animation-fill-mode`는 애니메이션이 실행되기 전과 후의 요소의 스타일을 지정한다.
+- 단축속성 `animation`은 마지막에 `keyframes`값을 넣고 시간은 먼저 쓰인 값이 `duration`이다.
+
+
+## 학습 결과물
+오늘의 학습결과물은 TIL 최상위 파일의 '학습 결과물 살펴보기 링크에 추가되었습니다.
+
+### 강의 학습 현황
+
+\> CSS강의 'transform', 'transition', '애니메이션'

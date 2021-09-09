@@ -1,0 +1,301 @@
+/* transform */
+/* 요소에 회전, 크기조절, 기울이기 이동효과 부여 */
+/* 원본요소의 자리는 유지하되 움직이는것 */
+/* 함수로 값을 입력 */
+/* 여러개의 값을 스페이싱으로 구분해서 사용가능 */
+/* 좌표 체계는 왼쪽 위 상단이 (0,0) */
+/*  */
+
+/* scale() - 크기 */
+/* scaleX, scaleY, scale() */
+/* scale(sx, sy) */
+/* x나 y축만 조정하고 싶다면 scaleX(), scaleY()사용 */
+.scale{
+  width: 400px;
+  transform: scale(0.5, 1);
+}
+
+/* rotate() 회전 */
+/* 값으로 <angle>을 줄 수 있다 */
+/* rotate(<angle>) */
+/* <angle>은 deg, grad, rad, turn | 1turn = 한바퀴*/
+/* 양수일때 시계방향으로, 음수일때 반시계방향으로 이동 */
+.rotate{
+  transform: rotate(33deg);
+}
+
+/* translate(), translateX), translatYe() */
+/* translate(x, y)값을 이용해서 x, y만큼 움직인다. */
+/* 값을 하나만 입력시 x축으로 이동함 */
+/* %와 음수도 사용가능 %는 각각 자기가 위치한 길이가 기준 */
+
+.translate {
+  transform: translate(200px, -30%);
+}
+
+/* skew() 기울이기 */
+/* 값은 1개 혹은 2개 */
+/* <angle>값으로 조절 */
+/* skew(ax, ay) */
+
+.skew{
+  transform:skew(0, 20deg);
+}
+
+/* transform-origin */
+/* transform의 원점을 변경하는 property */
+/* 기본값은 center */
+
+.origin{
+  display: block;
+  border: black 10px solid;
+  transform-origin: 50px 100px;  
+  transform: scale(1.2) translate(300px,200px);
+}
+
+
+
+/* transition 전환효과 */
+/* CSS의 상태에 변화를 줄때 시간이 필요하다. */
+
+/* trastition-property는 바꾸고 싶은 CSS요소를 선택하는 요소이다. */
+/* none, all사용가능 */
+
+/* trastition-duration는 바뀌는데 걸리는 시간을 지정하는 요소이다. */
+/* <time>값을 사용 s, ms로 시간표시가능 */
+
+.transition {
+  width : 200px;
+  height: 60px;
+  border : 2px solid black;
+  background-color: paleturquoise;
+  font-size: 20px;
+  transition-property: all;
+  transition-duration: 1s;
+  margin-bottom: 250px  ;
+}
+
+.transition:hover{
+  color: white;
+  background-color: black;
+}
+
+/* transition-delay, transition-timing-function */
+/* transition-delay는 요소의 transition을 얼마나 대기했다 실행하는지 시간을 지정한다. */
+
+.delay {
+  transition-delay: 2s;
+}
+
+/* transition-timing-function은 transition-duration동안 변하는 요소가 중간에 어느정도의 변화를 가질지 정하는 요소이다. */
+
+.stick {
+  width: 200px;
+  height: 30px;
+  background-color: cadetblue;
+  transition-duration: 3s;
+  transition-property: all;
+  border: 1px solid black;
+  margin : 30px;
+}
+
+.stick:hover{
+  width: 800px;
+}
+
+.ease{
+  transition-timing-function: ease;
+}
+
+.ease-in{
+  transition-timing-function: ease-in;
+}
+
+.ease-in-out{
+  transition-timing-function: ease-in-out;
+}
+
+.ease-out{
+  transition-timing-function: ease-out;
+}
+
+/* transition (shorthand) */
+/* 대게 transition은 단축속성으로 작성 */
+/* 기본값들은은 0S, all, ease이다 */
+/* 순서는 다음과 같다.  name | duration | timing function | delay */
+/* 2가지 이상의 property에 작성시 ,로 구분 */
+
+.transitionShort{
+  transition: all 3s ease 1s;
+}
+
+
+
+/* transition + transform */
+
+.TT{
+  width: 100px;
+  height: 100px;
+  border: 10px solid green;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  transition-property: all;
+  transition-duration: 3s;
+}
+
+.TT:hover{
+  transform: rotate(360deg) translate(30px, 30px);
+  transform-origin: bottom right;
+}
+
+
+/* animation */
+
+/* @keyframe */
+/* 개발자가 애니메이션 중간중간의 특정 지점을 거칠수 있는 키 프레임 설정 */
+
+.ani{
+  width: 100px;
+  height: 100px;
+  border: 10px solid green;
+  background-color: black;
+  color: white;
+  border-radius: 30px;  
+  animation: my-animation 2s infinite alternate;
+}
+
+@keyframes my-animation {
+  /* from {width:100px;} */
+  0% {width:100px;}
+  /* to {width:300px;} */
+  50% {width:300px;}
+  100% {
+    background-color: cadetblue;
+  }
+}
+
+
+/* animation-name */
+/* 키프레임의 이름을 입력하는 요소 */
+/* 대소문자를 구분하며 특수문자는 -_두가지만 사용가능하다 */
+/* 상속이 되지 않지만 직접 선언시 상속이 가능하다 */
+
+
+/* animation-duration */
+/* 애니메이션의 한 사이클이 몇초에 걸쳐 재생될지 결정하는 요소 */
+/* 값은 <time>을 쓴다 0이상의 수만 사용가능 */
+
+/* animation-delay */
+/* 한 사이클을 진행하는데 지연시간을 얼마나 줄지 결정하는 요소 */
+/* 음수 사용가능 */
+/* 음수로 되어있으면 애니메이션이 중간부터 시작한다. */
+/* -1초면 애니메이션이 바로 시작되지만 애니메이션이 1초전에 재생이 된것처럼 시작한다 */
+
+
+/* animation-timing-function */
+/* 애니메이션이 중간에 어느정도의 변화를 가질지 결정하는 요소 */
+
+.ani2{
+  width: 100px;
+  height: 100px;
+  border: 10px solid green;
+  background-color: black;
+  color: white;
+  border-radius: 30px;  
+  animation: moving 3s infinite;
+  /* animation-duration: 3s;
+  animation-timing-function: ease; */
+  animation-delay: -1s;
+}
+
+.ani3{
+  width: 100px;
+  height: 100px;
+  border: 10px solid green;
+  background-color: black;
+  color: white;
+  border-radius: 30px;  
+  animation: moving 3s infinite;
+  /* animation-duration: 3s;
+  animation-timing-function: ease; */
+  animation-delay: 1s;
+}
+
+@keyframes moving {
+  0% {
+    transform: translate(0,0);
+  }
+  
+  50% {
+    transform: translate(500px,0);
+  }
+  
+  100% {
+    transform: translate(0,0);
+  }
+}
+
+/* animation-iteration-count */
+/* 애니메이션의 재생횟수 <number>를 사용할 수 있다 */
+/* infinite를 사용하여 무한재생할 수 있다 */
+
+/* animation-direction */
+/* 키프레임을 어떻게 재생할지 정한다 */
+/* normal : 정방향 */
+/* reverse : 역방향 */
+/* alternate : 정/역 반복 */
+/* alternate-reverse 역방향으로 시작하는 정/역반복 */
+
+.ani4{
+  width: 100px;
+  height: 100px;
+  border: 10px solid green;
+  background-color: black;
+  color: white;
+  border-radius: 30px;  
+  animation: rotate 3s infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+@keyframes rotate {
+  from {transform: rotate(0);}
+  to {transform: rotate(360deg);}
+}
+
+/* animaiton-play-state */
+/* pause로 설정시 애니메이션이 일시정지 */
+/* default : running */
+
+.ani4:hover{
+  animation-play-state:paused;
+}
+
+
+/* animation-fill-mode */
+/* 애니메이션이 실행되기 전과후의 스타일을 지정 */
+/* none, forwards, backwards, both를 값으로 사용가능 */
+/* forwards : 끝날때 ketframe의 마지막 모습을 유지 */
+/* backwars : 시작하기전에 적용 */
+/* both : forwards + backwards */
+
+.fillmode{
+  width : 100px;
+  height: 100px;
+  border : solid 2px black;
+  animation: fill 3s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fill {
+  0%{background-color: red;}
+  50%{width: 200px;}
+  100%{background: black;}
+}
+
+/* animation (shorthand) */
+/* animation의 단축속성 */
+/* 작성하지 않은 값은 초기값을 사용한다 */
+/* 순서는 상관없으나 시간의 경우 먼저 쓰인 값이 duration 두번째가 delay, 마지막엔 애니메이션의 keyframes이름을 넣는다 */
+

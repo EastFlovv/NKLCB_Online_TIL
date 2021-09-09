@@ -172,9 +172,6 @@ div {
 /* RGBA rgba(_, _, _, _) 각 자리에 0 ~ 255, 마지막은 투명도로 0 ~ 1 */
 /* HSL 실린더형 좌표계 사용 (hsl(), hsla()의 함수형 표기법) */
 
-.hexColor {
-  /* background-color: ; */
-}
 
 
 /* opacity */
