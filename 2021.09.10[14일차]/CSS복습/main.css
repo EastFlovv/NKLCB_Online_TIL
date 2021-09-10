@@ -1,0 +1,98 @@
+.font{
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.font>p:nth-child(2){
+  letter-spacing: -15px;
+  word-spacing: 100px;
+}
+
+.font>p:nth-child(3){
+  text-align: center;
+}
+
+.indent{
+  text-indent: 130px;
+}
+
+.break{
+  width: 100px;
+  border: 1px solid black;
+  word-break: break-all;
+}
+
+.txtdeco{
+  text-decoration: none;
+}
+
+.trans{
+  text-transform: uppercase;
+}
+
+.border {
+  display : inline-block;
+  width: 300px;
+  height: 300px;
+  border : 4px solid green;
+  border-radius: 40px;
+  box-sizing: border-box;
+  margin: 20px;
+}
+
+.hidden {
+  width: 500px;
+  height: 500px;
+  visibility: hidden;
+}
+
+.rel {
+  width: 200px;
+  height: 200px;
+  background-color: saddlebrown;
+  position:relative;
+  left: 200px;
+  top: -100px;
+}
+
+.ab{
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  border: 10px solid red;
+  border-radius: 40px;
+  top: 30px;
+  left: 100px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.fixed {
+  position: fixed;
+  width: 200px;
+  height: 400px;
+  border: 3px solid blue;
+  font-size: 20px;
+  font-weight: 700;
+  right: 200px;
+  bottom: 400px;
+}
+
+.sticky{
+  position: sticky;
+  width: 200px;
+  height: 200px;
+  background-color: slateblue;
+  top: 200px;
+  left: 200px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.overf{
+  width: 100px;
+  height: 200px;
+  overflow :hidden;
+  border: 1px solid black;
+}

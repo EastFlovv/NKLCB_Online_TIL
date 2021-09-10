@@ -1,0 +1,194 @@
+.big{
+  font-size: 20px;
+}
+
+/* flexbox */
+/* 요소를 가로로 정렬하기 위해 inline-block이나 float같은 편법을 사용해왔었다. */
+/* display: flex를 사용하여 가로, 세로의 정렬을 사용할 수 있다. (1차원 정렬?) */
+
+/* flex container */
+/* 부모요소 */
+
+/* flex item */
+/* 자식요소 */
+
+/* main axis 주축 (default: 가로) */
+
+/* cross axis 교차축 (default: 세로) */
+
+
+/* display */
+/* display속성을 변경해 내부 요소의 정렬방식을 결정한다. */
+/* display-outside: 요소간의 앞뒤 관계를 정의 (inline, block, inline-block) */
+/* display-inside: 요소 내부의 관계를 정의 (flex, grid) */
+
+/* 
+ex)
+.container {
+  display: inline-flex; 
+}
+*/
+
+/* flex-direction */
+/* 플렉스 컨테이너 내의 아이템을 배치할때 사용할 주축과 방향을 결정한다. */
+/* row (default) , row-reverse, column, column-reverse */
+
+
+.container{
+  height: 500px;
+  display: flex;
+  border: 5px dashed orange;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  flex-grow: 1;
+  font-size: 30px;
+  background-color: skyblue;
+  border: 2px solid black;
+}
+
+
+/* flex-wrap */
+/* nowrap (default) 무조건 한줄에 배치 , wrap, wrap-reverse */
+/* flex-item 요소들이 강제로 한줄에 배치되게 할 것인지 여러줄로 배치되게 할것인지 고르는 속성이다. */
+
+
+/* flex-flow */
+/* flex-direction + flex-wrap을 합친 단축속성 */
+/* 
+.example-flow{
+  flex-flow: row-reverse warp;
+}
+*/
+
+
+/* order */
+/* flex혹은 grid 컨테이너 안에서 현재요소의 배치순서를 정한다 */
+/* 기본값은 0, 정수형만 사용가능 수가 작을수록 앞으로 배치된다. 부모요소가 display: flex or display: grid 여야함 */
+.item:nth-child(3) {
+  order: -1;
+  flex-grow: 0;
+}
+
+/* flex-grow */
+/* 요소내부에 할당가능한 공간의 정도 */
+/* 음수값을 허용하지 않는 number값을 사용합니다. */
+/* 형제요소들이 동일한 grow를 갖는다면 동일한 공간을 갖는다. */
+
+.item:first-child {
+  flex-grow: 2;
+}
+
+
+/* flex-shrink */
+/* flex item들의 요소가 flex container보다 클때 설정한다. */
+/* item들이 얼마나 작아질지 설정하는 요소 */
+/* 기본값은 1 수가 클수록 더 많이 더빨리 줄어든다 */
+
+.container2{
+  height: 500px;
+  display: flex;
+  border: 5px dashed orange;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  flex-basis: 0;
+}
+
+.item2 {
+  width: 300px;
+  height :300px;
+  border: 5px solid red;
+}
+
+.item2:first-child {
+  flex-shrink: 0;
+}
+
+
+/* flex-basis */
+/* 플렉스 아이템의 초기 크기를 지정한다. */
+/* box-sizing을 지정하지 않으면 콘텐츠 박스의 크기를 변경함 */
+/* 사용하는 값은 <width> */
+/* flex-basis가 없이 flex-grow와 같은 값을 설정하면 content의 크기를 기준으로 늘어난다. */
+
+/* flex (단축속성) */
+/* 단축속성 flex는 felx-grow, shrink, basis를 합친것 */
+
+/* 작성시 순서를 맞추어 작성할것 */
+/* 값을 하나만 쓸때 number면 grow, lerngth나 %면 basis */
+/* 값이 두개일떄  flex-absis의 기본값이 auto에서 0이됨*/
+
+/* justify-content */
+/* 주축을 기준으로 아이템을 어떻게 배치할지 결정함 */
+
+.container3 {
+  height: 150px;
+  display: flex;
+  border: 5px dashed orange;
+  flex-direction: row;
+  flex-basis: 0;
+  /* justify-content: flex-end; */
+}
+
+.item3 {
+  width: 100px;
+  height :100px;
+  border: 5px solid green;
+}
+
+.container3:nth-child(3) {
+  justify-content: space-between;
+}
+
+.container3:nth-child(4){
+  justify-content: space-around;
+}
+
+/* align-items */
+/* 해당 flex요소를 교차축에서 어느 위치에 놓을지를 결정한다. */
+
+.container3:nth-child(5){
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* align-content */
+/* 여러줄에 대한 교차축의 배치방식 */
+
+
+.container3:nth-child(6){
+  flex-wrap: wrap;
+  height: 400px;
+  align-content: space-around;
+}
+
+.container3:nth-child(6) > .item3{
+  width: 200px;
+}
+
+/* align-self */
+/* conatiner안에서 wrap으로 인해 줄이 바뀌면 여러개의 컨테이너처럼 작동함 */
+/* align-self는 item요소에 사용하여 하나의 아이템 요소를 배치할 수 있음 */
+
+.container3:nth-child(7){
+  width: 500px;
+  flex-wrap: wrap;
+  height: 400px;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-around;
+}
+.container3:nth-child(7) > .item3{
+  width: 200px;
+}
+
+.container3:nth-child(7) > .item3:nth-child(4){
+  width: 200px;
+  height: auto;
+  align-self: center;
+}

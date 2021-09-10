@@ -22,6 +22,7 @@ TIL을 Markdown언어를 통해 작성합니다.
 5. [2021.09.07[11일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.07%5B11%EC%9D%BC%EC%B0%A8%5D)
 5. [2021.09.08[12일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.08%5B12%EC%9D%BC%EC%B0%A8%5D)
 5. [2021.09.09[13일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.09%5B13%EC%9D%BC%EC%B0%A8%5D)
+5. [2021.09.19[14일차] TIL]()
 
 
 # 일차별 TIL 요점보기
@@ -502,3 +503,38 @@ margin collapsing은 처음 보는 개념이라 이해하는데 시간이 조금
 ### 강의 학습 현황
 
 \> CSS강의 'transform', 'transition', '애니메이션'
+
+## 2021.09.10 [14일차]
+
+오늘은 flex요소에 대해 학습하고 CSS의 폰트와 박스모델 그리고 레이아웃에 대한 복습을 진행했다.  
+공부하던중에 깜짝테스트 공지가 와 테스트를 보게되었는데 mac이나 safari브라우저를 사용해본적이 없고 관심도 가져본적이 없어 찍은 문제도 있었다.  
+flex 요소에 대해 공부하면서 느낀것이 flex는 요소 자체가 가지는 개념의 이해는 어렵지 않으나 파생되는 요소의 값들이 다양해 확실하게 실습하지 않으면 헷깔릴것같다는것이였다.  
+flex공부를 마친뒤 복습을 위해 여러 CSS요소를 사용하며 복습 HTML파일을 만들었다.
+
+
+## 공부한 내용
+- flexbox는 flex container와 flex item으로 구성된다.  
+- `flex`는 한줄의 정렬을 의미한다.  
+- `display: flex`의 display는 display-inside요소이다.
+- `flex-direction`을 통해 플렉스 컨테이너 안의 아이템을 배치할때 사용할 주축과 방향을 결정한다.
+- `flex-wrap`을 통해 flex item이 부모요소를 초과할때 여러줄이 되게 할 수 있다.  
+- `flex-flow`는 `flex-direction`과 `flex-wrap`을 합친 단축속성이다.  
+- `order`는 `flex`, `grid`안에서 현재요소의 item의 배치순서을 정한다.  
+- `flex-grow`는 flex container내부의 flex item이 가지는 공간의 정도를 나타낸다. 
+- `flex-shrink`는 flex item이 작아지는 정도를 설정하는 요소이다.
+- `flex-basis`는 flex item의 초기 크기를 지정한다.
+- 단축속성 `flex`는 `flex-grow`, `flex-shrink`, `flex-basis`를 합친것이다.
+- `justify-content`는 주축을 기준으로 flex item을 어떻게 배치할지 결정한다.
+- `align-item`은 flex item을 교차축 기준으로 어떻게 배치할지 결정한다.
+- `align-content`는 여러줄에 대한 교차축의 배치방식을 결정한다.
+- `align-self`는 item요소 하나에 배치를 변경한다.
+
+
+## 학습 결과물
+
+[폰트, 박스모델, 레이아웃 복습](./CSS복습/index.html)  
+오늘의 학습결과물은 TIL 최상위 파일의 '학습 결과물 살펴보기 링크에 추가되었습니다.
+
+### 강의 학습 현황
+
+\> CSS강의 'flexbox', CSS복습 '폰트 관련 속성', '박스 모델', '레이아웃'
