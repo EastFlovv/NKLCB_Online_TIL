@@ -1,0 +1,25 @@
+nav {
+  border-bottom: 1px solid rgb(231,231,231);
+  height: 64px;
+  padding: 0 16px;
+}
+
+nav>a{
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  line-height: 64px;
+}
+
+.menu {
+  display: inline;
+  line-height: 64px;
+}
+
+.menu>li{
+  list-style: none;
+  float: right;
+  margin: 0px 10px;
+}
+

@@ -106,6 +106,7 @@ flex item들의 요소가 flex container보다 클때 설정하는 속성이다.
 
 `justify-content`는 주축을 기준으로 좌우에 대한 배치를 결정한다.  
 `justify-content`의 속성값은 다음과 같다.  
+
 값 | 정렬
 --|--
 flex-start | 요소들을 컨테이너 좌측으로 정렬
@@ -119,6 +120,7 @@ space-around | 요소들 주위로 동일한 간격으로 정렬
 해당 flex요소를 교차축에서 어느 위치에 놓을지를 결정한다.  
 `flex-wrap`속성에 의해 `wrap`으로 인해 2줄이상으로 될 경우 컨테이너를 2개 사용하는것처럼 적용한다.
 `align-items`의 값은 다음과 같다.  
+
 값 | 정렬
 --|--
 flex-start | 요소들을 컨테이너 상단으로 정렬

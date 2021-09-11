@@ -1,0 +1,69 @@
+
+* {
+  margin: 0;
+}
+
+h1, h2 ,p{
+  margin-left: 20px;
+}
+
+body{
+  height: 2000px;
+}
+
+main{
+  width: 70%;
+}
+
+.title {
+  height: 150px;
+  background-color: blue;
+  color: white;
+}
+
+.title h1{
+  line-height: 100px;
+}
+
+#intro h2{
+  height: 100px;
+  line-height: 100px;
+}
+
+#intro p {
+  margin-right: 20px;
+}
+
+
+aside {
+  width: 30%;
+  /* border : 1px solid black; */
+  position: absolute;
+  right:0;
+  top: 0;
+}
+
+aside>h2 {
+  height :100px;
+  line-height: 100px;
+}
+
+aside li {
+  font-size: 20px;
+  margin: 20px 20px;
+  border-bottom: 1px solid black;
+}
+
+
+
+  /* width의 최대 크기가 720px이하일때   */
+  @media screen and (max-width:720px) {
+    main {
+      width: 100%;
+    }
+
+    aside {
+      position: static;
+      width: auto;
+    }
+  }

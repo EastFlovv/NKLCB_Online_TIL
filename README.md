@@ -22,7 +22,8 @@ TIL을 Markdown언어를 통해 작성합니다.
 5. [2021.09.07[11일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.07%5B11%EC%9D%BC%EC%B0%A8%5D)
 5. [2021.09.08[12일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.08%5B12%EC%9D%BC%EC%B0%A8%5D)
 5. [2021.09.09[13일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.09%5B13%EC%9D%BC%EC%B0%A8%5D)
-5. [2021.09.19[14일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.10%5B14%EC%9D%BC%EC%B0%A8%5D)
+5. [2021.09.10[14일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.10%5B14%EC%9D%BC%EC%B0%A8%5D)
+5. [2021.09.11[15일차] TIL]()
 
 
 # 일차별 TIL 요점보기
@@ -538,3 +539,36 @@ flex공부를 마친뒤 복습을 위해 여러 CSS요소를 사용하며 복습
 ### 강의 학습 현황
 
 \> CSS강의 'flexbox', CSS복습 '폰트 관련 속성', '박스 모델', '레이아웃'
+
+
+## 2021.09.11 [15일차]
+
+오늘은 색상과 배경, transform, transition, 애니메이션을 복습하고 HTML, CSS연습문제와 코딩테스트 문제를 풀어보았다.  
+아직 코딩테스트 문제는 반밖에 풀지 못했다.  HTML, CSS연습문제에서 높이값없이 align-content를 적용하려고 시도하다가 지속적인 검색과 시도 끝에 높이값 없이는 적용이 불가능하다는것을 알고 margin을 통한 공백을 만든뒤 wrap만 사용해서 예제를 만들 수 있었다.  
+
+코딩테스트 연습문제의 경우 2번에서 난관이 있었는데 결국 주먹구구식으로 만든 알고리즘이라 제대로 된 답을 출력하긴 하나 좀 더 좋은 방법이 있을것 같다.  
+알고리즘 공부를 더 열심히 해서 더 빠르고 효율적인 알고리즘을 사용할수 있도록 해야겠다.
+
+## 공부한 내용
+- `opacity`와 `rgba()`의 투명요소는 잘 구분해서 사용해야한다.  
+- `background-image`를 통해 요소의 배경을 이미지로 사용할 수 있다.  
+- `background-image`의 부가 요소로는 `-repeat`, `=position`, `-origin`, `-size`가 있다.
+- `transition`을 통해 요소의 모양에 변화를 줄 수 있다.
+- `scale()`은 크기, `rotate()`는 회전, `skew()`는 기울이기 `translate()`는 이동을 한다.
+- `transition`을 통해 요소의 변화를 시간을 들여 진행 할 수 있다.  
+- `transition`의 부가요소로는 `-property`, `-duration`, `-delay`, `-timing-function`이 있다.
+- `animation`은 `@keyframes`를 통해 요소의 변화 중간의 특정지점을 골라 지속적인 변활를 줄 수 있다.  
+- `animation-iteraion-count`를 통해 애니메이션의 반복횟수를 정할수 있다.
+- `animation-direction`을 통해 애니메이션의 진행방향을 선택할수 있다.
+- `animation-fill-mode`를 통해 애니메이션 전후의 요소 형태르 정할 수 있다.
+- media query를 사용해 반응형 웹사이트를 만들수 있다. 
+- 높이값 없이 `align-content`를 사용할 수 없다.
+- `Math.floor()`에 음수를 사용하면 값이 -1된다.
+
+## 학습 결과물
+
+오늘의 학습결과물은 TIL 최상위 파일의 '학습 결과물 살펴보기 링크에 추가되었습니다.
+
+### 강의 학습 현황
+
+\> CSS강의 '색상과 배경', 'transform', 'transition', '애니메이션' 복습, HTML,CSS연습문제 1~5풀이, 코딩테스트 연습문제2 1~3풀이

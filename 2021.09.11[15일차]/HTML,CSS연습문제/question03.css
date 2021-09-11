@@ -1,0 +1,18 @@
+.icons{
+  display:flex;
+  width:400px;
+  /* height: 400px; */
+  /* background-color: burlywood; */
+  border: 1px solid black;
+  flex-wrap: wrap;
+  /* justify-content: flex-start; */
+}
+
+
+.icons>img{
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 15px;
+}

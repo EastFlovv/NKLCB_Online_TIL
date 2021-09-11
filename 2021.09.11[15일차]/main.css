@@ -1,0 +1,92 @@
+div {
+  border: 1px solid black;
+}
+
+.rgba{
+  width: 100px;
+  height: 100px;
+  background-color: rgba(123,223,123,0.2);
+}
+
+.opacity {
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+  opacity: 0.3;
+}
+
+.bgimage{
+  width: 400px;
+  height: 400px;
+  background-image: url('http://www.isi-education.com/wp-content/uploads/2020/01/icon_youtube_250.png');
+}
+
+.norepeat{
+  background-repeat: no-repeat;
+}
+
+.bgposition{
+  background-position: right bottom;
+}
+
+.bgorigin{
+  background-origin: content-box;
+  border: 10px dashed black;
+  padding : 100px;
+}
+
+.bgsize{
+  background-size: cover;
+}
+
+.scale{
+  transform:scale(2, 0.5);
+}
+
+.rotate{
+  transform: rotate(220deg);
+}
+
+.translate{
+  transform: translate(500px, -200px);
+}
+
+.skew{
+  transform: skew(20deg);
+}
+
+.trnsitionScale:hover{
+  transform:scale(2, 0.5);
+  transition-property: all;
+  transition-duration: 3s;
+}
+
+.delayNtiming{
+  transition-delay: 2;
+  transition-timing-function: ease-in-out;
+}
+
+@keyframes anime {
+  0%{color:red;}
+  50%{color:yellow;}
+  100%{color:blue;}
+}
+
+.ani{
+  width: 400px;
+  height: 200px;
+  font-size: 40px;  
+  /* @keyframes로 지정된 애니메이션 이름 */
+  animation-name: anime;
+  /* 애니메이션 지속시간 */
+  animation-duration: 3s;
+  /* 무한재생 */
+  animation-iteration-count: infinite;
+  /* 타이밍함수 */
+  animation-timing-function: ease-in-out;
+}
+
+.ani:hover{
+  /* 마우스를 올리면 정지함 */
+  animation-play-state: paused;
+}
