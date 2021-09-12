@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+
+  <h2>font관련</h2>
+
+  <p class="font1">font-size:30ox, font-weight는 굵기 700 = bold </p>
+  <p class="font2">font-style은 기울이기</p>
+  <p class="font3">font-family로 글씨체 선택가능</p>
+  <p class="font4">letter-spacing, word-spacing으로 글자, 단어간 간격 조절</p>
+  <p class="font5">text-align으로 글자 정렬가능</p>
+  <p class="font6">text-decoration으로 글자 꾸미기 가능</p>
+  <p>word-break</p>
+  <div class="font7"><p>Loremipsumdolorsitametconsecteturadipisicingelit.Adipisciporronemoconsequaturvoluptatibus,explicaboipsamperspiciatisfacereaccusantiumsuscipitidpossimusreiciendisest voluptatemquidemdolorquasquam,ametdeserunt.</p></div>
+
+  <p class="font8">text-transform uppercase</p>
+
+
+  <h2>단위와 값</h2>
+  <p>
+    &lt;length&gt;값은 px과 같은 길이값 입력가능<br>
+    px은 절대길이<br>
+    em, rem은 상대길이 이다. em은 현재요소의 글자크기(상위로부터 상속받음)가 1em, 1rem은 html의 글자크기 기준<br>
+    상대'길이' vh, vw는 뷰포트의 높이값, 너비값을 의미 100vh = 100%의 높이값<br>
+    vmin, vmax는 축에 상관없이 현재 뷰포트의 긴 여역을 vmax, 짧은 영역을 vmin으로 지정<br>
+    %로도 길이 표현가능<br>
+    길이값에 clac(),min(),max()함수로 계산값 표현가능. 하지만 IE에서 지원을 하지 않는다
+  </p>
+
+  <h2>박스모델</h2>
+
+  <div class="box1">width : 100px, height: 100px</div>
+  <div class="box2">max width : 1000px, min width: 800px</div>
+  <div class="box3">margin : 100px</div>
+  <div class="box4">
+    <div>padding 50px</div>
+  </div>
+  <div class="box5">border : 5px dashed red</div>
+  <div class="box6">border radius : 180px</div>
+
+  <h2>레이아웃</h2>
+  <p>
+    display요소 inline, block, inline-block<br>
+    inline은 width, height값 지정 불가 margin도 좌우로만 가능, 가로배치<br>
+    block은 width, height값 지정가능 세로배치
+    inline-block은 width, height값 지정가능 가로배치
+  </p>
+
+  <div class="lay1">float으로 띄운 요소</div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut possimus ab cupiditate repellat quis, dolor ipsa aliquam doloremque voluptas sint reprehenderit ut dignissimos mollitia culpa odit. Optio sint fuga necessitatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut possimus ab cupiditate repellat quis, dolor ipsa aliquam doloremque voluptas sint reprehenderit ut dignissimos mollitia culpa odit. Optio sint fuga necessitatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut possimus ab cupiditate repellat quis, dolor ipsa aliquam doloremque voluptas sint reprehenderit ut dignissimos mollitia culpa odit. Optio sint fuga necessitatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut possimus ab cupiditate repellat quis, dolor ipsa aliquam doloremque voluptas sint reprehenderit ut dignissimos mollitia culpa odit. Optio sint fuga necessitatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut possimus ab cupiditate repellat quis, dolor ipsa aliquam doloremque voluptas sint reprehenderit ut dignissimos mollitia culpa odit. Optio sint fuga necessitatibus.</p>
+
+
+  <div class="rel">
+    position relative 자기 자신을 기준으로 배치<br>
+    rigth : 500px
+    <div class="absol">position absolute는 position static이 아닌 부모요소를 기준으로 배치</div>
+  </div>
+  
+  <div class="fix">
+    position fixed는 뷰포트를 기준으로 배치
+  </div>
+
+  <div class="sticky">position sticky는 스크롤 요소를 따라 배치</div>
+
+
+  <div class="bg">backgound-color를 통해 배경색 지정가능</div>
+  <div class="bg2">opacity는 요소의 불투명도 조절</div>
+  <div class="bg3">background-image로 배경 사진 선택</div>
+  <p>background-repeat를 통해 배경 이미지의 반복을 설정할 수 있다.</p>
+  <div class="bg3 bgpo">background-position으로 배경 이미지의 위치 지정가능</div>
+  <p>background-origin을 통해 배경요소의 시작지점 선택가능</p>
+  <div class="bg4"></div>
+  <p>background-size를 통해 이미지의 크기 조절 가능</p>
+  <div class="bg5"></div>
+
+  <h2>transform</h2>
+  <p>transform속성을 통해 요소를 이동, 기울이기, 회전, 크기조절을 할 수 있다.</p>
+
+  <div class="bo tform">
+    width, height: 100px;
+    scale() 크기 조절
+  </div>
+
+  <div class="bo tform2">
+    rotate() 요소의 회전
+  </div>
+
+  <div class="bo tform3">
+    translate() 요소의 이동
+  </div>
+  
+  <div class="bo tform4">
+    skew() 요소 기울이기
+  </div>
+
+  <p>transform-origin속성을 통해 요소의 transform요소가 적용될 기준점을 정할 수 있습니다.</p>
+
+  <h2>transition</h2>
+
+  <p>transition은 요소의 변화에 시간을 부여하는 옵션</p>
+  <p>transition-property는 적용될 CSS요소의 이름</p>
+  <p>transition-duration은 요소가 바뀌는 시간</p>
+
+  <div class="tsit">올리면 색이 변합니다 <br>
+    transition-duration: 3s
+  </div>
+  <p>transition-delay는 요소변화의 지연시간입니다.</p>
+  <div class="tsit de">올리면 색이 변합니다 <br>
+    transition-delay: 1s
+  </div>
+
+  <p>transition-timing-function을 통해 요소가 변하는 강세르 조절할 수 있습니다.</p>
+
+
+</body>
+</html>

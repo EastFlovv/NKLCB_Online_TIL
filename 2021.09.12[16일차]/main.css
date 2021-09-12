@@ -1,0 +1,186 @@
+div{
+  border:1px solid black;
+}
+
+.font1{
+  font-size: 30px;
+  font-weight: bold;
+}
+.font2{
+  font-style: italic;
+}
+
+.font3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.font4{
+  letter-spacing: -2px;
+  word-spacing: 20px;
+}
+
+.font5 {
+  text-align: center;
+}
+
+.font6{
+  text-decoration: red line-through 2px;
+}
+
+.font7{
+  word-break: break-all;
+  width: 400px;
+  height: 100px;
+}
+
+.font8{
+  text-transform: uppercase;
+}
+
+.box1{
+  width: 100px;
+  height: 100px;
+}
+
+.box2{
+  max-width: 1000px;
+  min-width: 500px;
+  height: 50px;
+}
+
+.box3{
+  margin: 100px; 
+}
+
+.box4{
+  padding:50px;
+}
+
+.box4>div{
+  background-color: yellowgreen;
+}
+
+.box5{
+  width: 200px;
+  height: 200px;
+  border : 5px dashed red;
+}
+
+.box6{
+  width: 200px;
+  height: 200px;
+  border: 2px dotted blue;
+  border-radius: 180px;
+}
+
+.lay1{
+  width:150px;
+  height:150px;
+  float:left;
+}
+
+.rel{
+  position: relative;
+  left: 300px;
+  width: 400px;
+  height: 400px;
+}
+
+.absol{
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  bottom:20px;
+  right: 20px;
+}
+
+.fix{
+  position: fixed;
+  width: 200px;
+  height: 400px;
+  right: 70px;
+  top: 400px;
+}
+
+.sticky{
+  width: 200px;
+  height: 100px;
+  position: sticky;
+  top: 100px;
+  left : 200px;
+}
+
+.bg{
+  background-color: burlywood;
+  width: 500px;
+  height: 300px;
+}
+
+.bg2 {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  opacity: 0.4;
+}
+
+.bg3{
+  width: 300px;
+  height: 300px;
+  background-image: url("https://s1.piq.land/2013/08/13/WVhgNl0gqXjyFwKUlmqWoDkX_400x400.png");
+}
+
+.bgpo{
+  background-position: center;
+}
+
+.bg4{
+  width: 500px;
+  height: 500px;
+  background-image: url("https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg");
+  border: 20px dotted black;
+  background-origin: border-box;
+}
+
+.bg5 {
+  width: 50px;
+  height: 50px;
+  background-image: url("https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg");
+  background-size: cover;
+}
+
+.bo{
+  width: 100px;
+  height: 100px;
+}
+
+.tform{
+  transform: scale(2, 0.5);
+  background-color: skyblue;
+}
+
+.tform2{
+  transform: rotate(270deg);
+}
+
+.tform3{
+  transform: translate(300px, 100px);
+}
+
+.tform4{
+  transform: skew(-30deg);
+}
+
+.tsit{
+  transition-property: all;
+  transition-duration: 3s;
+}
+
+.tsit:hover{
+  background-color: tomato;
+  color: white;
+}
+
+.de{
+  transition-delay: 1s;
+  transition-duration: 0s;
+}
