@@ -10,7 +10,8 @@ grid강의가 아직 열리지 않아 오늘은 CSS의 폰트에서 transition�
 
 ## 공부한 내용
 
-- HTML, CSS관련 내용은 본 문서의 index.html과 main.css를 통해 확인할 수 있다.
+- HTML, CSS관련 내용은 본 문서의 index.html과 main.css를 통해 확인할 수 있다.  
+[복습 HTML 바로가기](https://goofy-pike-2843c1.netlify.app/2021.09.12%5B16%EC%9D%BC%EC%B0%A8%5D/)
 - Array.length를 통해 배열의 길이를 구할 수 있다.
 - JavaScript에서 지정되지 않은 배열값은 undefined가 된다.
 - 배열은 `push()`함수를 통해 값을 추가할 수 있다.
