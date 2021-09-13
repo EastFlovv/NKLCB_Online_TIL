@@ -25,7 +25,7 @@ TIL을 Markdown언어를 통해 작성합니다.
 5. [2021.09.10[14일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.10%5B14%EC%9D%BC%EC%B0%A8%5D)
 5. [2021.09.11[15일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.11%5B15%EC%9D%BC%EC%B0%A8%5D)
 5. [2021.09.12[16일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.12%5B16%EC%9D%BC%EC%B0%A8%5D)
-5. [2021.09.13[17일차] TIL]()
+5. [2021.09.13[17일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.13%5B17%EC%9D%BC%EC%B0%A8%5D)
 
 
 # 일차별 TIL 요점보기
