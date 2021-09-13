@@ -1,0 +1,143 @@
+/* grid */
+/* flexbox layout과 유사하다 */
+/* flex는 main axis에 주로 item들이 존재함 */
+/* grid는 main axis와 cross axis 모두에 item들을 둘 수 있다 */
+/* grid는 columns와 rows로 구성됨, 행과 열사이에 공백이 있는데 이 공백을 gutters라고 부름 */
+/* display: grid는 블록속성 세로로 배치된다 */
+/* display: inline-grid를 통해 그리드 속성을 유지하면서 가로배치를 할 수 있다. */
+
+
+.container{
+  border: 5px dashed black;
+  
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 150px;
+}
+
+.item{
+  background-color: skyblue;
+  border:3px solid red;
+  font-size: 30px;
+}
+
+/* grid-template-columns, grid-template-rows : 컨테이너 요소 */
+/* 값으로 px, em등 사용가능 fr(프랙션)이라는 단위도 사용 */
+/* fr은 비율을 결정함 */
+/* repeat()함수를 통해 반복되는 grid 아이템을 표현할 수 있다. */
+.container2{
+  border: 5px dashed black;
+  height: 400px;
+
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr;  */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr 1fr;
+  /* width: 150px;   */
+}
+
+/* grid-template-areas */
+/* 땅따먹기 하듯이 구역을 설정할 수 있다 */
+/* 차지하고싶지 않은 영역은 .으로 표기 */
+/* 2차원 배열처럼 사용한다 각 요소는 사각형 형태를 가져야함 */
+
+.container3{
+  width: 500px;
+  height: 500px;
+  border: 5px dashed slateblue;
+  display: grid;
+  grid-template-areas: 
+    "h h h h h"
+    "m m m . s"
+    "m m m . s"
+    "m m m . s"
+    "f f f f f";
+}
+/* grid-template-area 사용을 위해 각 클래스에 grid-area속성을 통해 별칭을 부여한다 */
+.header{
+  grid-area: h;
+}
+
+.main{
+  grid-area: m;
+}
+
+.sidebar{
+  grid-area: s;
+}
+
+.footer{
+  grid-area: f;
+}
+
+/* (grid-)row-gap, column-gap (같은역할) 행,열의 간격을설정 */
+/* 단축속성 gap을 사용하여 한번에 표현가능 gap: row column */
+
+.container4{
+  width: 400px;
+  height: 400px;
+  border: 4px dashed orange;
+
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+
+  /* row-gap: 20px;
+  column-gap: 10px; */
+  gap: 20px 10px;
+}
+
+/* grid-auto-rows, grid-auto-columns */
+/* 추가된 행/열의 크기를 지정 */
+/* 추가되어 넘쳐 흐르는 아이템만 이 속성의 영향을 받는다 */
+.auto{
+  grid-auto-rows: 150px;
+}
+
+/* grid-auto-flow */
+/* grid내의 아이템 배치의 순서를 결정 */
+/* dense값은 span으로 늘어나 빈공간이 생겼을때 빈공간을 채움*/
+.container5{
+  border : 5px dashed pink;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-flow: row dense;
+}
+
+.container5>.item:nth-child(2){
+  grid-column: span 3;
+}
+
+/* grid (shorthand) */
+/* 외재적속성 (명시적), 내재적속성 (암시적) */
+/* grid: rows/ columns */
+/* auto-flow가 사용하고싶다면 grid의 값으로 같이 사용 */
+
+/* justify-content, align-content */
+/* flexbox와 사용법이 동일하다 */
+
+/* justify-items, align-items 하나의 아이템을 어떻게 배치할지 */
+
+/* grid-row, grid-column을 통해 콘텐츠를 늘여서 표현가능 */
+.sp{
+  /* grid-row-start: 1;
+  grid-row-end: 3; */
+  grid-row: 1 / -1;
+}
+
+/* grid-template-area에 지정하기 위해 이름을 작성하는 속성 (키워드) */
+/* grid-row, grid-column들을 표현하기 위한 단축속성 */
+/* .grid-a{
+  grid-area: startRow/startColumn/endRow/endColumn;
+} */
+
+/* order */
+/* item의 표시순서를 바꾼다 정수사용 수가 작을수록 앞으로 */
+
+
+/* min-content, max-content templatecolumns,row에 작성 */
+/*  */
+
+
+/* auto-fill, auto-fit */

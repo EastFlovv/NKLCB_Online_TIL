@@ -25,6 +25,7 @@ TIL을 Markdown언어를 통해 작성합니다.
 5. [2021.09.10[14일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.10%5B14%EC%9D%BC%EC%B0%A8%5D)
 5. [2021.09.11[15일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.11%5B15%EC%9D%BC%EC%B0%A8%5D)
 5. [2021.09.12[16일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.12%5B16%EC%9D%BC%EC%B0%A8%5D)
+5. [2021.09.13[17일차] TIL]()
 
 
 # 일차별 TIL 요점보기
@@ -605,3 +606,34 @@ grid강의가 아직 열리지 않아 오늘은 CSS의 폰트에서 transition�
 ### 강의 학습 현황
 
 \> CSS강의 '폰트관련 속성', '단위와 값', '박스모델', '색상과 배경', 'transform', 'transition' 복습및 실습파일 구성, 코딩테스트 연습문제2 4~5풀이, 6은 풀고있다.
+
+## 2021.09.13 [17일차]
+
+오늘은 grid영역을 학습했다.  
+생소한 개념은 아니였는데 주요 flex 요소보다 훨씬 복잡하다 보니 이해에 시간을 상당히 소비했다.  
+실습을 통해 grid를 학습해 보았는데. flex와 table을 합친듯한 모양새가 마음에 든다.
+
+## 공부한 내용
+
+- `grid`는 flexbox layout과 같은 display indside요소이다.
+- flex를 1차원 배열에 빗대어 본다면 `grid`는 2차원 배열로 빗대어 볼 수 있다.
+- `grid-template-rows(columns)`를 통해 그리드의 영역을 명시적으로 구분할 수 있다.
+- `grid-template-area`를 통해 item요소의 배치를 그림처럼 그려낼 수 있다. 이때 item요소들은 `grid-area`라는 속성을 통해 `grid-template-area`에 쓰일 별칭을 지정해야한다.
+- `row(column)-gap`을 통해 grid item간의 간격인 gutter를 조정할수있다.
+- `grid-auto-rows(columns)`를 통해 `grid-template-rows(columns)`로 지정된 크기를 넘어가는 추가요소들의 크기를 지정할 수 있다.
+- `grid-auto-flow`를 통해 grid안에서 item들이 배치될 규칙을 지정할 수 있다.
+- `justify-content`, `align-content`는 flex와 같이 각 행, 열간의 정렬을 지정한다.
+- `justify-items`, `align-items`은 grid의 지정된 한 칸 안에 들어있는 요소가 칸보다 작을때 정렬을 지정한다.
+- `grid-row`, `grid-column`은 grid아이템의 크기를 지정하는 단축속성이다.
+- `grid-area`는 `grid-template-area`에 들어갈 item의 별칭을 정하거나, `grid-row`, `grid-column`의 단축속성으로 사용한다.
+- grid의 사용 단위로는 `fr`, `min-content`, `max-content`가 있다.
+- `auto-fill`, `auto-fit`속성을 통해 grid의 빈공간을 item들이 어떻게 채울것인지 정할 수 있다.
+
+
+## 학습 결과물
+
+오늘의 학습결과물은 TIL 최상위 파일의 '학습 결과물 살펴보기 링크에 추가되었습니다.
+
+### 강의 학습 현황
+
+\> CSS강의 'grid'
