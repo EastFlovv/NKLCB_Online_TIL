@@ -5,7 +5,7 @@ function answer(num){
     let star = ' '.repeat(num-i-1) + '*'.repeat(i*2+1) + '\n';
     result += star;
   }
-
+  
   return result;
 };
 
