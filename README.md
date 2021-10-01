@@ -14,7 +14,7 @@
 1. [2021.09.28[4일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.28%5B4%EC%9D%BC%EC%B0%A8%5D)
 1. [2021.09.29[5일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.29%5B5%EC%9D%BC%EC%B0%A8%5D)
 1. [2021.09.30[6일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.09.30%5B6%EC%9D%BC%EC%B0%A8%5D)
-1. [2021.10.01[7일차] TIL]()
+1. [2021.10.01[7일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.10.01%5B7%EC%9D%BC%EC%B0%A8%5D)
 
 ## 2021.09.25 [1일차]
 
