@@ -41,7 +41,6 @@ const input = fs.readFileSync('./data.txt').toString();
 let kg = Number(input);
 // console.log(kg);
 
-let result = 0;
 let five = parseInt(kg/5);
 let last = kg%5;
 

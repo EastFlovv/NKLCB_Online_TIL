@@ -39,6 +39,9 @@
 ## 백준 문제풀이
 
 ### 1193
+각 분수의 모와 자의 합은 대각선을 기준으로 같다.  
+그리고 짝수번째, 홀수번째 대각선인지에 따라 분자가 큰수에서 시작할지, 분모가 큰수에서 시작할지 결정한다.  
+이러한 특징을 잡아내 다음과 같은 코드로 풀어냈다.
 ```js
 const fs = require('fs');
 const input = fs.readFileSync('./data.txt').toString();
@@ -64,7 +67,9 @@ count%2 == 0?
 ```
 
 ### 1712
-
+일단 판매대금이 고정 생산 비용보다 작거나 같으면 흑자전환을 할 수 없으므로 무조건 -1을 리턴한다.  
+하지만 그렇지 않다면 판매대금-생산비용의 값을 고정설비비용으로 나누어 몫만든다.  
+그렇게 만든 몫에서 1대를 더 팔면 그떄부터 흑자전환이므로 +1을 하여 값을 출력한다.
 ```js
 const fs = require('fs');
 const input = fs.readFileSync('./data.txt').toString().split(' ');
@@ -87,6 +92,8 @@ data[1]>=data[2]?
 ```
 
 ### 2292
+벌집의 수는 중앙에서 멀어질수록 등차수열의 만큼의 테두리를 갖는다.  
+이러한 특성을 이용해 목표지점의 수에서 1을 빼고 6으로 나눈 수를 등차수열로 쫒아가 나눈 수가 이동한 수를 넘기면 출발지점인 1의 발판값인 1을 더해서 값을 출력한다.
 ```js
 const fs = require('fs');
 const input = fs.readFileSync('./data.txt').toString();
@@ -106,6 +113,9 @@ console.log(count+1);
 
 
 ### 2775
+한 집에 사람이 살기 위해선 자신의 아래층의 1호수부터 자신의 호수까지의 사람수만큼 입주해야 한다.  
+이말인 즉 자신의 같은층의 앞호수 + 자신의 바로 아래층 같은 호수의 값이 자신의 값이 된다.  
+이러한 특징은 모든 층이 가지고 있으므로 재귀함수를 이용하여 값을 찾아낸다.
 ```js
 const fs = require('fs');
 const input = fs.readFileSync('./data.txt').toString().split('\n');
@@ -130,6 +140,9 @@ for (let i = 0; i < T; i++) {
 
 
 ### 2839
+5로 보다 작고 3으로 나눌수 없는 수의 경우 바로 -1을 출력한다.  
+그 외의 경우 5kg포대의 수를 줄여가며 3kg으로 값을 나누어 보며 무한 루프한다.  
+5키로 포대를 줄여가며 3키로 포대로 모든 설탕을 포장했다면 5키로와 3키로 포대의 수를 더해 출력하고 그렇지 않아 5키로 포대의 수가 -1로 갈 경우 -1을 출력하고 break하여 반복문을 탈출한다.
 ```js
 const fs = require('fs');
 const input = fs.readFileSync('./data.txt').toString();
@@ -137,7 +150,6 @@ const input = fs.readFileSync('./data.txt').toString();
 let kg = Number(input);
 // console.log(kg);
 
-let result = 0;
 let five = parseInt(kg/5);
 let last = kg%5;
 
@@ -164,8 +176,9 @@ if(last%3 == 0){
 
 
 ### 2869
+달팽이는 마지막 순간에 정상에 닿으면 더이상 떨어지지 않으므로 목표높이-잠자기전 이동거리를 하여 남은거리를 측정한다.  
+이렇게 측정된 높이를 잠자며 올라가는 거리로 나누어 나오는 값을 올림처리하여 반환한뒤, 이 값에 마지막 낮의 날짜인 1을 더해 출력한다.
 ```js
-
 const fs = require('fs');
 const input = fs.readFileSync('./data.txt').toString().split(' ');
 // const input = fs.readFileSync('/dev/stdin').toString().split('\n');
@@ -180,6 +193,9 @@ console.log(day);
 ```
 
 ### 10250
+이 문제는 모든 고객이 높이를 먼저 우선한 뒤 넓이를 차지하므로 높이를 이용하여 층수와 호수를 찾아낸다.  
+높이값은 고객번호를 층값으로 나눈 나머지로 구하고, 나눈 몫을 올림하여 고객의 호수를 찾아낸다.  
+단 호수와 층수가 String형태로 붙어야 하므로 출력시 빈 문자열을 앞에 붙여 출력해야 한다.
 ```js
 const fs = require('fs');
 const input = fs.readFileSync('./data.txt').toString().split('\n');
@@ -203,6 +219,7 @@ for (let i = 0; i < T; i++) {
 ```
 
 ### 10757
+값이 매우 크므로 BigInt를 사용해 값을 구한뒤 toString()하여 문자열로 바꾸면 BigInt의 n이 사라져 출력된다.
 ```js
 const fs = require('fs');
 const input = fs.readFileSync('./data.txt').toString().split(' ');
