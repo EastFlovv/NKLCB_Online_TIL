@@ -24,23 +24,23 @@ function answer(arr){
   }
   
   // 나의 풀이
-  for (let i = 0; i < arr.length; i++) {
-    // current는 flag
-    let current = ll.head;
-    // 새 노드
-    let node = new Train(arr[i]);
-    // 리스트가 비어있다면 노드가 헤드
-    if(ll.head == null) ll.head = node;
-    else{
-      // 다름 노드가 null이 아니라면
-      while(current.next != null){
-        // current는 다음노드로
-        current = current.next;
-      }
-      // 끝 노드에 오면 다음노드에 새 노드 삽입
-      current.next = node;
-    }
-  }
+  // for (let i = 0; i < arr.length; i++) {
+  //   // current는 flag
+  //   let current = ll.head;
+  //   // 새 노드
+  //   let node = new Train(arr[i]);
+  //   // 리스트가 비어있다면 노드가 헤드
+  //   if(ll.head == null) ll.head = node;
+  //   else{
+  //     // 다름 노드가 null이 아니라면
+  //     while(current.next != null){
+  //       // current는 다음노드로
+  //       current = current.next;
+  //     }
+  //     // 끝 노드에 오면 다음노드에 새 노드 삽입
+  //     current.next = node;
+  //   }
+  // }
   // 연결리스트 반환
   return ll;
 }
