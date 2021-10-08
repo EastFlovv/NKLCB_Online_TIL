@@ -21,7 +21,7 @@
 1. [2021.10.05[11일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.10.05%5B11%EC%9D%BC%EC%B0%A8%5D)
 1. [2021.10.06[12일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.10.06%5B12%EC%9D%BC%EC%B0%A8%5D)
 1. [2021.10.07[13일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.10.07%5B13%EC%9D%BC%EC%B0%A8%5D)
-1. [2021.10.07[13일차] TIL]()
+1. [2021.10.07[13일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.10.08%5B14%EC%9D%BC%EC%B0%A8%5D)
 
 ## 2021.09.25 [1일차]
 
@@ -389,6 +389,9 @@ vsCode로 볼떈 정답이 나오니 정확한 원인을 모르고 있어 더욱
 - 딕셔너리를 통해 객체를 이용한 자료구조를 사용할 수 있다.  
 - 해시테이블을 이용해 O(1)의 시간복잡도로 빠른 동작을 만들 수 있다. 단 공간은 낭비가 심할 수 있고, 충돌에 의해 데이터가 소실될 수 있다.
 - djb2해시테이블, 선형조사법 해시테이블, 체이닝 해시테이블을 통해 충돌을 줄이거나 없앨 수 있다.
+- djb2는 임의의 시드를 넣고 해시에 값을 더할떄 고정된 값을 곱해 만든다.
+- 선형조사법은 중복되는 해시가 있을때 다음 배열의 위치로 값을 더한다.
+- 체이닝 해시테이블은 중복되는 해시가 있을때 같은 배열의 위치에 연결리스트로 값들을 더한다.
 - 다른 JS파일을 JS파일에 import할 수 있다.
 - export, import하는 두 파일 모두 확장자를 .mjs로 바꿔야한다.
 
