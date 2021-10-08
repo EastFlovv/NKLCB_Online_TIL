@@ -1,3 +1,5 @@
+export { LinkedList };
+
 // Node(): data와 point를 가지고 있는 객체
 function Node(data){
   this.data = data;
@@ -135,27 +137,27 @@ LinkedList.prototype.remove2 = function (value){
 }
 
 
-let ll = new LinkedList();
-ll.insert(1);
-ll.insert(10);
-ll.insert(100);
-ll.insert(2, 1);
-ll.insert(3, 3);
-ll.printNode()
+// let ll = new LinkedList();
+// ll.insert(1);
+// ll.insert(10);
+// ll.insert(100);
+// ll.insert(2, 1);
+// ll.insert(3, 3);
+// ll.printNode()
 
-console.log(ll.indexOf(1000));
-console.log(ll.indexOf(1));
-console.log(ll.indexOf(100));
-console.log(ll.indexOf(10));
+// console.log(ll.indexOf(1000));
+// console.log(ll.indexOf(1));
+// console.log(ll.indexOf(100));
+// console.log(ll.indexOf(10));
 
-console.log(ll.remove2(1000));
-ll.printNode()
-console.log(ll.remove2(1));
-ll.printNode()
-console.log(ll.remove2(2));
-ll.printNode()
+// console.log(ll.remove2(1000));
+// ll.printNode()
+// console.log(ll.remove2(1));
+// ll.printNode()
+// console.log(ll.remove2(2));
+// ll.printNode()
 
-// console.log(ll);
+// // console.log(ll);
 
 // ll.head = new Node(123);
 // ll.length++;
@@ -167,3 +169,4 @@ ll.printNode()
 
 // ll.printNode();
 // console.log(ll.size());
+
