@@ -25,7 +25,8 @@
 1. [2021.10.09[15일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.10.09%5B15%EC%9D%BC%EC%B0%A8%5D)
 1. [2021.10.10[16일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.10.10%5B16%EC%9D%BC%EC%B0%A8%5D)
 1. [2021.10.11[17일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.10.11%5B17%EC%9D%BC%EC%B0%A8%5D)
-1. [2021.10.11[18일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.10.12%5B18%EC%9D%BC%EC%B0%A8%5D)
+1. [2021.10.12[18일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.10.12%5B18%EC%9D%BC%EC%B0%A8%5D)
+1. [2021.10.13[19일차] TIL]()
 
 ## 2021.09.25 [1일차]
 
@@ -512,3 +513,20 @@ vsCode로 볼떈 정답이 나오니 정확한 원인을 모르고 있어 더욱
 ### 강의 학습 현황
 
 \> 자바스크립트 비선형 알고리즘 '6. 정렬(5)' ~ 알고리즘 '15. 문제풀이 - 타겟넘버'
+
+## 2021.10.13 [19일차]
+
+오늘은 내일의 정기 테스트와 2일뒤의 비정기 테스트를 대비한 문제풀이를 했다. 실제로 도전하다가 못 푼 문제도 많았고 성공하는데 오랜 시간이 걸리는 문제도 있었다.  
+하지만 문제를 결국 풀어냄으로써 몇가지 헷깔리던 문제 유형에 대해 잘 알게 되었고 정확하게 이해하지 못했던 것들도 잘 알게되었다.  
+직접 사용해보고 체험해봄으로써 이전에 풀지 못했던 문제를 풀 수 있게 되고 또 다른 영역에 있어서 이전에 시도하지 못했던 접근법의 접근하는게 매우 재미있다.  
+실제로 풀지못한 문제중에는 파일로 남기지 않은 것도 많다.
+
+## 공부한 내용
+
+
+## 학습 결과물
+학습 결과물은 같이 포함된 파일에 동봉되었으며 각 TIL의 목록별 소제목에 링크가 달려있다.
+
+### 강의 학습 현황
+
+\> leetCode문제풀이
