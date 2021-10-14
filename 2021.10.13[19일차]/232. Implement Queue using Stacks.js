@@ -1,5 +1,5 @@
 
-var MyQueue = function() {
+let MyQueue = function() {
   this.array = [];
 };
 
