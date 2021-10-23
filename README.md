@@ -35,6 +35,7 @@
 1. [2021.10.19[25일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.10.19%5B25%EC%9D%BC%EC%B0%A8%5D)
 1. [2021.10.20[26일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.10.20%5B26%EC%9D%BC%EC%B0%A8%5D)
 1. [2021.10.21[27일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.10.21%5B27%EC%9D%BC%EC%B0%A8%5D)
+1. [2021.10.23[29일차] TIL]()
 
 ## 2021.09.25 [1일차]
 
@@ -690,6 +691,24 @@ floyd-warshall의 경우는 완전 처음 본 경우 였는데 모든 경우 경
 ## 공부한 내용
 
 - 리트코드 문제풀이
+
+## 학습 결과물
+학습 결과물은 같이 포함된 파일에 동봉되었으며 각 TIL의 목록별 소제목에 링크가 달려있다.
+
+### 강의 학습 현황
+
+\> 리트코드 문제풀이
+
+## 2021.10.23 [29일차]
+
+면담을 통해 LeetCode에서 Medium난이도의 문제를 풀어보는것이 좋을것 같다는 조언을 받았다.  
+그래서 오늘은 LeetCode에서 Medium난이도의 스택 문제를 풀어보았다.  
+난이도가 Easy에서 Medium으로 올라간 만큼 문제들의 요구 조건이 훨씬 많아졌고 난이도도 올라갔다.  
+하지만 한문제를 제외하고는 솔루션 없이 결국 풀어냈으며 몇가지 문제는 해결하지 못했다.
+
+## 공부한 내용
+
+- 리트코드 문제풀이 Medium 난이도 도전
 
 ## 학습 결과물
 학습 결과물은 같이 포함된 파일에 동봉되었으며 각 TIL의 목록별 소제목에 링크가 달려있다.
