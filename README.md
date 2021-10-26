@@ -37,6 +37,7 @@
 1. [2021.10.21[27일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.10.21%5B27%EC%9D%BC%EC%B0%A8%5D)
 1. [2021.10.23[29일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.10.23%5B29%EC%9D%BC%EC%B0%A8%5D)
 1. [2021.10.25[31일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.10.25%5B31%EC%9D%BC%EC%B0%A8%5D)
+1. [2021.10.26[32일차] TIL]()
 
 ## 2021.09.25 [1일차]
 
@@ -724,6 +725,23 @@ leetCode에서 medium문제 풀이를 했다.
 올라간 난이도 때문에 문제의 정답률이 많이 내려가고 한 문제를 푸는데도 시간이 많이 걸리기 시작했다.  
 지금은 stack풀이를 하는데 문제들이 죄다 알것 같으면서도 뭔가 한걸음 부족한 느낌이다.  
 내일은 오늘 못푼문제들을 다시 한번 풀어봐야할것같다. 오늘은 컨디션이 안좋은지 제대로 머리가 돌지 않는다.
+
+## 공부한 내용
+
+- 리트코드 문제풀이 Medium 난이도 도전
+
+## 학습 결과물
+학습 결과물은 같이 포함된 파일에 동봉되었으며 각 TIL의 목록별 소제목에 링크가 달려있다.
+
+### 강의 학습 현황
+
+\> 리트코드 문제풀이
+
+## 2021.10.26 [32일차]
+
+leetCode medium문제풀이  
+stack문제인데도 이중 for문으로 푼 문제도 있다.  
+medium난이도를 극복하기 위해 Monotonic Stack에 관해 공부 해봐야 할것같다.
 
 ## 공부한 내용
 
