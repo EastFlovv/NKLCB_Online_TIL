@@ -38,6 +38,7 @@
 1. [2021.10.23[29일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.10.23%5B29%EC%9D%BC%EC%B0%A8%5D)
 1. [2021.10.25[31일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.10.25%5B31%EC%9D%BC%EC%B0%A8%5D)
 1. [2021.10.26[32일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.10.26%5B32%EC%9D%BC%EC%B0%A8%5D)
+1. [2021.10.27[33일차] TIL]()
 
 ## 2021.09.25 [1일차]
 
@@ -742,6 +743,25 @@ leetCode에서 medium문제 풀이를 했다.
 leetCode medium문제풀이  
 stack문제인데도 이중 for문으로 푼 문제도 있다.  
 medium난이도를 극복하기 위해 Monotonic Stack에 관해 공부 해봐야 할것같다.
+
+## 공부한 내용
+
+- 리트코드 문제풀이 Medium 난이도 도전
+
+## 학습 결과물
+학습 결과물은 같이 포함된 파일에 동봉되었으며 각 TIL의 목록별 소제목에 링크가 달려있다.
+
+### 강의 학습 현황
+
+\> 리트코드 문제풀이
+
+## 2021.10.27 [33일차]
+
+monotonic stack에 관한 공부  
+모노 스택에 관한 공부와 관련 문제 풀이를 해보았다.  
+모노 스택이란 스택을 단조롭게 만드는것을 말하는데 스택 문제중 모노 스택을 사용하는 문제들에 내가 특히 약해 모노스택에 공부하고, 관련 문제를 풀어보는 시간을 가져 보았다.  
+거의 모든 문제가 정답에 근접한것 같은데 반례가 자꾸 나오는것으로 보아 약간의 깨달음을 얻으면 모노스택을 정복 할 수 있을것만 같다.  
+오늘은 문제를 여러개 시도해 보았으나 결국 한문제도 풀지 못했다.
 
 ## 공부한 내용
 
