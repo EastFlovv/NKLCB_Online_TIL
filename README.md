@@ -4,7 +4,7 @@
 
 ## 1차 결과물 링크
 [1차 학습 결과물 살펴보기](https://goofy-pike-2843c1.netlify.app/)  
-[1차 TIL README.md 보기](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/1%EC%B0%A8_TIL)
+[1차 TIL README.md 보기](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/1%EC%B0%A8_TIL)  
 [2, 3차 TIL README.md 보기](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2%2C%203%EC%B0%A8_TIL)
 
 ## 4차 각 일차별 TIL 상세보기(링크)
