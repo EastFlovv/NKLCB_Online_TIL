@@ -1,0 +1,28 @@
+{
+  "name": "til",
+  "version": "1.0.0",
+  "description": "1차 결과물은 새 파일에 모아두고 2차 TIL을 작성합니다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EastFlovv/NKLCB_Online_TIL.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EastFlovv/NKLCB_Online_TIL/issues"
+  },
+  "homepage": "https://github.com/EastFlovv/NKLCB_Online_TIL#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-plugin-import": "^2.25.2",
+    "prettier": "2.4.1"
+  }
+}
