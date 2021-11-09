@@ -15,7 +15,8 @@
 1. [2021.11.04[4일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.11.04%5B4%EC%9D%BC%EC%B0%A8%5D_TIL)
 1. [2021.11.05[5일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.11.05%5B5%EC%9D%BC%EC%B0%A8%5D_TIL)
 1. [2021.11.06[6일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.11.06%5B6%EC%9D%BC%EC%B0%A8%5D_TIL)
-1. [2021.11.06[8일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.11.08%5B8%EC%9D%BC%EC%B0%A8%5D_TIL)
+1. [2021.11.08[8일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.11.08%5B8%EC%9D%BC%EC%B0%A8%5D_TIL)
+1. [2021.11.09[9일차] TIL]()
 
 
 ## 2021.11.01 [1일차]
@@ -184,3 +185,27 @@
 ### 강의 학습 현황
 
 \> 러버덕, 해시 알고리즘 문제풀이, 16~20강 예습
+
+## 2021.11.09 [9일차]
+
+오늘은 지난주부터 이어온 많은 예습을 조원과 러버덕 하고 강사님과의 질의응답을 통해 모르던 부분을 보강하고 프로토타입에 대한 수업을 들을 수 있었다.  
+12강부터 20강까지의 내용이 대부분 프로토타입을 설명하기 위한 단원이였으며 이를 통해 프로토타입이 JS에 있어 아주 중요하고 핵심이라는것을 알았다.  
+프로토타입에 대한 공부를 추가적으로 최대한 이해 할 수 있도록 해야겠다.
+
+## 공부한 내용
+
+- 전역변수의 문제점
+- 모듈패턴을 통한 캡슐화가 다른 객체지향언어의 캡슐화와 다른점
+- 클린코드의 기초  
+- 일급객체와 중복함수에 대한 설명
+- __proto__접근자 프로퍼티는 왜 접근자 프로퍼티인가
+- 프로토타입에 대한 설명
+- JS에서 this가 가리키는 내용은 맥락에 따라 변함
+
+## 학습 결과물
+
+학습 결과물은 같이 포함된 파일에 동봉되었으며 각 TIL의 목록별 소제목에 링크가 달려있다.
+
+### 강의 학습 현황
+
+\> 러버덕, 질의 응답 수업,  프로그래머스 정렬 문제풀이
