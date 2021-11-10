@@ -17,6 +17,7 @@
 1. [2021.11.06[6일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.11.06%5B6%EC%9D%BC%EC%B0%A8%5D_TIL)
 1. [2021.11.08[8일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.11.08%5B8%EC%9D%BC%EC%B0%A8%5D_TIL)
 1. [2021.11.09[9일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.11.09%5B9%EC%9D%BC%EC%B0%A8%5D_TIL)
+1. [2021.11.10[10일차] TIL](https://github.com/EastFlovv/NKLCB_Online_TIL/tree/master/2021.11.10%5B10%EC%9D%BC%EC%B0%A8%5D_TIL)
 
 
 ## 2021.11.01 [1일차]
@@ -209,3 +210,23 @@
 ### 강의 학습 현황
 
 \> 러버덕, 질의 응답 수업,  프로그래머스 정렬 문제풀이
+
+## 2021.11.10 [10일차]
+
+오늘은 21 ~ 23강 예습을 진행했다.  
+클로저로 들어가기 전 실행 컨텍스트와 this 그리고 빌트인 객체에 대해 학습하여 개념을 미리 잡아두기 위한 교육으로 보여 열심히 했다.  
+특히 클로저가 매우 중요하다고 했는데 클로저가 실행 컨텍스트에 대해 이해하지 못하면 안된다고 해서 좀 더 살펴본것 같다.
+
+## 공부한 내용
+
+- 원시값인 String, Number, Boolean을 객체처럼 사용시 래퍼객체가 된다.
+- this 함수의 호출 방식에 따라 참조하는 곳이 다르다.
+- 실행 컨텍스트는 식별자를 등록하고 관리하는 스코프와 코드 실행 순서 관리를 구현한 매커니즘이다.
+
+## 학습 결과물
+
+학습 결과물은 같이 포함된 파일에 동봉되었으며 각 TIL의 목록별 소제목에 링크가 달려있다.
+
+### 강의 학습 현황
+
+\> 21~23강 예습, 프로그래머스 2단계 문제 
